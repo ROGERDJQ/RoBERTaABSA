@@ -2,7 +2,7 @@
 
 This repo contains the code for [NAACL 2021](https://2021.naacl.org/program/accepted/) paper titled [Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa](https://arxiv.org/abs/2104.04986).
 
-For any questions about the implementation, feel free to create an issue or email me via jiqdai19@fudan.edu.cn.
+For any questions about the implementation, feel free to create an issue or email me via jqdai19@fudan.edu.cn.
 
 ## Usage
 
