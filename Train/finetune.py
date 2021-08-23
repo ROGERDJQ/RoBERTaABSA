@@ -57,7 +57,6 @@ parser.add_argument(
     "--data_dir",
     type=str,
     help="the dataset dir name, which can be concat with the dataset arguement",
-    default="/remote-home/jqdai/final_try/RoBERTaABSA/Dataset/"
 )
 parser.add_argument("--lr", type=float, default=2e-5)
 parser.add_argument(
@@ -84,7 +83,7 @@ fitlog.add_hyper(args)
 
 print(args)
 #######hyper
-n_epochs = 20
+n_epochs = 40
 pool = "max"
 smooth_eps = 0.0
 dropout = 0.5
@@ -101,11 +100,10 @@ elif model_type == "xlnet":
 elif model_type == "xlmroberta":
     mask = "<mask>"
 
-fitlog.set_rng_seed(877133)
-# @cache_results(
-#     "./caches/data_{}_{}_{}.pkl".format(args.dataset, mask, args.model_name),
-#     _refresh=True,
-# )
+@cache_results(
+    "./caches/data_{}_{}_{}.pkl".format(args.dataset, mask, args.model_name),
+    _refresh=True,
+)
 def get_data():
     data_bundle = ResPipe(model_name=args.model_name, mask=mask).process_from_file(
         os.path.join(args.data_dir, args.dataset)
