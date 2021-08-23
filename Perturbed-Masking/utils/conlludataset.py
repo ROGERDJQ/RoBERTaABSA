@@ -149,8 +149,8 @@ class ResLoader(Loader):
         fns = [f'{folder_name}_Test_biaffine_depparsed.json',
                f'{folder_name}_Train_biaffine_depparsed.json']
         if not os.path.exists(os.path.join(paths, fns[0])):
-            fns = [f'Test_biaffine_depparsed.json',
-                   f'Train_biaffine_depparsed.json']
+            fns = [f'Test.json',
+                   f'Train.json']
 
         for split, name in zip(['test', 'train'], fns):
             fp = os.path.join(paths, name)
@@ -168,5 +168,3 @@ class ResLoader(Loader):
         return data_bundle
 
 
-# c = ConllUDataset('./data/EWT/en_ewt-ud-test.conllu')
-# print('done')
