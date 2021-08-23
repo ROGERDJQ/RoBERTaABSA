@@ -168,5 +168,3 @@ class ResLoader(Loader):
         return data_bundle
 
 
-# c = ConllUDataset('./data/EWT/en_ewt-ud-test.conllu')
-# print('done')
