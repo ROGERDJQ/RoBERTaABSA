@@ -1,43 +1,31 @@
-import sys
-
-sys.path.append("../")
+import argparse
 import os
-
-if "p" in os.environ:
-    os.environ["CUDA_VISIBLE_DEVICES"] = os.environ["p"]
-
+import sys
 import warnings
 
-warnings.filterwarnings("ignore")
 import fitlog
-from fastNLP import (
-    AccuracyMetric,
-    BucketSampler,
-    ClassifyFPreRecMetric,
-    ConstantTokenNumSampler,
-    CrossEntropyLoss,
-    DataSetIter,
-    FitlogCallback,
-    RandomSampler,
-    SequentialSampler,
-    SortedSampler,
-    Trainer,
-    WarmupCallback,
-    cache_results,
-)
+import torch
+import torch.nn.functional as F
+from torch import nn, optim
+from tqdm import tqdm
+warnings.filterwarnings("ignore")
+from fastNLP import (AccuracyMetric, BucketSampler, ClassifyFPreRecMetric,
+                     ConstantTokenNumSampler, CrossEntropyLoss, DataSetIter,
+                     FitlogCallback, LossBase, RandomSampler,
+                     SequentialSampler, SortedSampler, Trainer, WarmupCallback,
+                     cache_results)
+from fastNLP.core.utils import (_get_model_device, _move_dict_value_to_device,
+                                _move_model_to_device)
 from fastNLP.embeddings import BertWordPieceEncoder, RobertaWordPieceEncoder
-from fitlog import _committer
-from torch import optim, nn
 from transformers import XLMRobertaModel, XLNetModel
 
-from pipe import ResPipe
+from pipe import DataPipe
 
 # fitlog.debug()
-os.makedirs("./FT_logs", exist_ok=True)
-fitlog.set_log_dir("FT_logs")
+root_fp = r"/your/work/space/RoBERTaABSA/Train"
+os.makedirs(f"{root_fp}/FT_logs", exist_ok=True)
+fitlog.set_log_dir(f"{root_fp}/FT_logs")
 
-
-import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -56,7 +44,7 @@ parser.add_argument(
 parser.add_argument(
     "--data_dir",
     type=str,
-    help="the dataset dir name, which can be concat with the dataset arguement",
+    help="dataset dir, should concat with dataset arguement",
 )
 parser.add_argument("--lr", type=float, default=2e-5)
 parser.add_argument(
@@ -69,6 +57,7 @@ parser.add_argument(
         "roberta-en-large",
         "xlmroberta-xlm-roberta-base",
         "bert-multi-base-cased",
+        "xlnet-xlnet-base-cased",
     ],
 )
 parser.add_argument("--save_embed", default=1, type=int)
@@ -77,13 +66,15 @@ parser.add_argument("--batch_size", default=32, type=int)
 
 args = parser.parse_args()
 
+args.data_dir = r"/your/work/space/RoBERTaABSA/Dataset"
+
 fitlog.add_hyper_in_file(__file__)
 fitlog.add_hyper(args)
 
 
 print(args)
 #######hyper
-n_epochs = 40
+n_epochs = 20
 pool = "max"
 smooth_eps = 0.0
 dropout = 0.5
@@ -100,12 +91,13 @@ elif model_type == "xlnet":
 elif model_type == "xlmroberta":
     mask = "<mask>"
 
+
 @cache_results(
-    "./caches/data_{}_{}_{}.pkl".format(args.dataset, mask, args.model_name),
-    _refresh=True,
+    f"{root_fp}/caches/data_{args.dataset}_{mask}_{args.model_name}.pkl",
+    _refresh=False,
 )
 def get_data():
-    data_bundle = ResPipe(model_name=args.model_name, mask=mask).process_from_file(
+    data_bundle = DataPipe(model_name=args.model_name, mask=mask).process_from_file(
         os.path.join(args.data_dir, args.dataset)
     )
     return data_bundle
@@ -116,23 +108,19 @@ data_bundle = get_data()
 print(data_bundle)
 
 if args.model_name.split("-")[0] in ("bert", "roberta", "xlnet", "xlmroberta"):
-    model_type, args.model_name = (
+    model_type, model_name = (
         args.model_name[: args.model_name.index("-")],
         args.model_name[args.model_name.index("-") + 1 :],
     )
 
 if model_type == "roberta":
-    embed = RobertaWordPieceEncoder(
-        model_dir_or_name=args.model_name, requires_grad=True, num_aspect=1
-    )
+    embed = RobertaWordPieceEncoder(model_dir_or_name=model_name, requires_grad=True)
 elif model_type == "bert":
-    embed = BertWordPieceEncoder(model_dir_or_name=args.model_name, requires_grad=True)
+    embed = BertWordPieceEncoder(model_dir_or_name=model_name, requires_grad=True)
 elif model_type == "xlnet":
-    embed = XLNetModel.from_pretrained(pretrained_model_name_or_path=args.model_name)
+    embed = XLNetModel.from_pretrained(pretrained_model_name_or_path=model_name)
 elif model_type == "xlmroberta":
-    embed = XLMRobertaModel.from_pretrained(
-        pretrained_model_name_or_path=args.model_name
-    )
+    embed = XLMRobertaModel.from_pretrained(pretrained_model_name_or_path=model_name)
 
 
 class AspectModel(nn.Module):
@@ -212,16 +200,8 @@ optimizer_grouped_parameters = [
 optimizer = optim.AdamW(optimizer_grouped_parameters, lr=args.lr)
 
 callbacks = []
-callbacks.append(WarmupCallback(0.01, "linear"))
-callbacks.append(
-    FitlogCallback(
-        # data_bundle.get_dataset('train')
-    )
-)
-
-import torch
-import torch.nn.functional as F
-from fastNLP import LossBase
+callbacks.append(WarmupCallback(0.01, "constant"))
+callbacks.append(FitlogCallback())
 
 
 class SmoothLoss(LossBase):
@@ -290,22 +270,22 @@ trainer = Trainer(
     test_use_tqdm=False,
 )
 
-trainer.train(load_best_model=False)
+trainer.train(load_best_model=True)
 
 
-fitlog.add_other(trainer.start_time, name="start_time")
-os.makedirs("./save_models", exist_ok=True)
-folder = "./save_models/{}-{}-{}".format(model_type, args.dataset, "FT")
-count = 0
-for fn in os.listdir("save_models"):
-    if fn.startswith(folder.split("/")[-1]):
-        count += 1
-folder = folder + str(count)
-fitlog.add_other(count, name="count")
-if args.save_embed and not os.path.exists(folder):
-    if not isinstance(embed, XLMRobertaModel):
-        embed.save(folder)
-    else:
+if args.save_embed:
+    fitlog.add_other(trainer.start_time, name="start_time")
+    os.makedirs(f"{root_fp}/save_models", exist_ok=True)
+    folder = f"{root_fp}/save_models/{model_type}-{args.dataset}-FT"
+    count = 0
+    for fn in os.listdir(f"{root_fp}/save_models"):
+        if fn.startswith(folder.split("/")[-1]):
+            count += 1
+    folder = folder + str(count)
+    fitlog.add_other(count, name="count")
+    if not os.path.exists(folder):
         os.makedirs(folder, exist_ok=True)
-        os.makedirs("{}/{}".format(folder, model_type), exist_ok=True)
-        embed.save_pretrained("{}/{}".format(folder, model_type))
+        if model_type  in ('bert', 'roberta'):
+            embed.save(folder)
+        else:
+            embed.save_pretrained(folder)

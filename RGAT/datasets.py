@@ -490,7 +490,7 @@ def load_and_cache_vocabs(data, args):
 
 def read_vectors(fp):
     glove_words = []
-    with open(fp, 'r') as fopen:
+    with open(fp, 'r',encoding='utf8') as fopen:
         for line in fopen:
             glove_words.append(line.strip().split(' ')[0])
     return glove_words

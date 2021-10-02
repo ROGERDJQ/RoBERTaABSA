@@ -125,12 +125,15 @@ class ConllUDataset:
             [UToken(*parts) for parts in zip(*d.values())]
             for d in self.examples]
 
+
+
+######   revision begin here
 from fastNLP.io import Pipe, Loader, DataBundle
 from fastNLP import DataSet, Instance
 import json
 
 
-class ResLoader(Loader):
+class DataLoader(Loader):
     def __init__(self):
         super().__init__()
 
@@ -146,11 +149,8 @@ class ResLoader(Loader):
         """
         data_bundle = DataBundle()
         folder_name = os.path.basename(paths)
-        fns = [f'{folder_name}_Test_biaffine_depparsed.json',
-               f'{folder_name}_Train_biaffine_depparsed.json']
-        if not os.path.exists(os.path.join(paths, fns[0])):
-            fns = [f'Test.json',
-                   f'Train.json']
+        fns = [f'Test.json',f'Train.json']
+
 
         for split, name in zip(['test', 'train'], fns):
             fp = os.path.join(paths, name)
@@ -166,5 +166,3 @@ class ResLoader(Loader):
                 ds.append(ins)
             data_bundle.set_dataset(ds, name=split)
         return data_bundle
-
-

@@ -3,22 +3,16 @@ import os
 from os.path import join
 from sys import path
 
-if "p" in os.environ:
-    os.environ["CUDA_VISIBLE_DEVICES"] = os.environ["p"]
+
 import warnings
 
 warnings.filterwarnings("ignore")
-from transformers import (
-    BertModel,
-    BertTokenizer,
-    RobertaModel,
-    RobertaTokenizer,
-    XLMRobertaModel,
-    XLMRobertaTokenizer,
-)
+from transformers import (BertModel, BertTokenizer, RobertaModel,
+                          RobertaTokenizer, XLMRobertaModel,
+                          XLMRobertaTokenizer)
 
 from dependency import get_dep_matrix_new
-from utils import ResLoader, UToken
+from utils import DataLoader, UToken
 
 if __name__ == "__main__":
     MODEL_CLASSES = {
@@ -31,9 +25,9 @@ if __name__ == "__main__":
 
     # Model args
     # save_matrix/{model_type}{trained or not}/{dataset}/
-    parser.add_argument("--model_path", type=str)  # 准备进行masking的模型
+    parser.add_argument("--model_path", type=str,default='/your/work/space/save_models/your/model')  # 准备进行masking的模型
     parser.add_argument("--dataset", default="Laptop")
-    parser.add_argument("--data_dir")
+    parser.add_argument("--data_dir", default=r'/your/work/space/RoBERTaABSA/Dataset')
     # Data args
     parser.add_argument("--cuda", default=1, help="invoke to use gpu")
     parser.add_argument(
@@ -46,19 +40,18 @@ if __name__ == "__main__":
 
     if "/" not in args.dataset:
         args.dataset = os.path.join(args.data_dir, args.dataset)
+    dataset_name = os.path.basename(args.dataset)
 
     if args.model_path.endswith("/"):
         args.model_path = args.model_path[:-1]
 
-    dataset_name = os.path.basename(args.dataset)
-
     if "/" in args.model_path:
         assert os.path.exists(args.model_path)
-
         model_type = os.path.basename(args.model_path)
+        model_type = model_type.split("-")[0]
     else:
         model_type = args.model_path  # PTMS
-
+    print(model_type)
     model_class, tokenizer_class, pretrained_weights = MODEL_CLASSES[model_type]
     trained_on = ""
     if "/" in args.model_path:
@@ -85,10 +78,9 @@ if __name__ == "__main__":
     os.makedirs(output_dir, exist_ok=True)
     print("Folder is {}".format(output_dir))
     args.output_file = output_dir + "/{}-{}.pkl"
-    # save_matrix/{model_type}{trained or not}/{dataset}/{split}-{layer}.pkl
+    # save_matrix/{model_type}{trained dataset or ""}{""}/{dataset}/{split}-{layer}.pkl
 
-    dataset_name = os.path.basename(args.dataset)
-    data_bundle = ResLoader().load(args.dataset)
+    data_bundle = DataLoader().load(args.dataset)
     for name in ["train", "test"]:
         args.data_split = name
         ds = data_bundle.get_dataset(name)

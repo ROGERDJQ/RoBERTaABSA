@@ -43,7 +43,7 @@ def parse_args():
 
     # Required parameters
     parser.add_argument(
-        "--dataset_name", type=str, default="rest", help="Choose absa dataset."
+        "--dataset_name", type=str, help="Choose absa dataset."
     )
     parser.add_argument("--refresh", type=int, default=0, help="Generate data again")
 
@@ -164,7 +164,7 @@ def parse_args():
     args.multi_hop = True
     args.num_classes = 3
     args.cuda_id = "0"
-    # args.bert_model_dir = "/data1/SHENWZH/models/bert_base"
+    args.bert_model_dir = "roberta-en"
     args.pure_bert = False
     args.gat_our = True
     args.gat_roberta = False

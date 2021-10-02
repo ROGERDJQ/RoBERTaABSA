@@ -4,17 +4,17 @@ import warnings
 warnings.filterwarnings("ignore")
 
 
-from dependency.dep_parsing import decoding_new as dep_parsing_new
-from dependency import _evaluation as dep_eval
 import json
 import os
 
+from dependency import _evaluation as dep_eval
+from dependency.dep_parsing import decoding_new as dep_parsing_new
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--matrix_folder", help="bert/Restaurants")
-    parser.add_argument("--layers", default="12")
+    parser.add_argument("--matrix_folder", default="bert/Laptop")
+    parser.add_argument("--layers", default="11")
 
     parser.add_argument("--subword", default="avg", choices=["first", "avg", "max"])
     parser.add_argument("--root", default="non-gold", help="use gold root as init")
@@ -41,11 +41,10 @@ if __name__ == "__main__":
     # results: [[line, 0, 0], [line, 0, 0]]
 
     model_type, dataset = args.matrix_folder.split("/")
-    matrix_folder = "save_matrix2/" + args.matrix_folder
-    os.makedirs(os.path.join("rgat3", model_type), exist_ok=True)
-    os.makedirs(os.path.join("rgat3", model_type, args.layers), exist_ok=True)
-    os.makedirs(os.path.join("rgat3", model_type, args.layers, dataset), exist_ok=True)
-    save_folder = os.path.join("rgat3", model_type, args.layers, dataset)
+    matrix_folder = "/your/work/space/save_matrix/" + args.matrix_folder
+
+    os.makedirs(os.path.join("/your/work/space/rgat", model_type, args.layers, dataset), exist_ok=True)
+    save_folder = os.path.join("/your/work/space/rgat", model_type, args.layers, dataset)
     print("Save to {}".format(save_folder))
 
     fns = os.listdir(matrix_folder)

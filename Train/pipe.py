@@ -1,24 +1,25 @@
-from fastNLP.io import Pipe, Loader, DataBundle
-import os
-from fastNLP import DataSet, Instance
 import json
-from fastNLP import Vocabulary
-from fastNLP.modules.tokenizer import RobertaTokenizer, BertTokenizer
+import os
 import warnings
 
 warnings.filterwarnings("ignore")
-from transformers import XLNetTokenizer, XLMRobertaTokenizer
+
+from fastNLP import DataSet, Instance, Vocabulary
+from fastNLP.io import DataBundle, Loader, Pipe
+from fastNLP.modules.tokenizer import BertTokenizer, RobertaTokenizer
+from transformers import XLMRobertaTokenizer, XLNetTokenizer
 
 
-class ResPipe(Pipe):
+class DataPipe(Pipe):
     def __init__(self, model_name="en", mask="<mask>"):
         super().__init__()
-        model_type = "roberta"
         if model_name.split("-")[0] in ("bert", "roberta", "xlnet", "xlmroberta"):
             model_type, model_name = (
                 model_name[: model_name.index("-")],
                 model_name[model_name.index("-") + 1 :],
             )
+        else:
+            raise ValueError("Invalid model name")
         if model_type == "roberta":
             self.tokenizer = RobertaTokenizer.from_pretrained(
                 model_dir_or_name=model_name
@@ -38,8 +39,6 @@ class ResPipe(Pipe):
 
     def process(self, data_bundle: DataBundle) -> DataBundle:
         new_bundle = DataBundle()
-        aspect_dict = {}
-        mask_id = self.tokenizer.convert_tokens_to_ids([self.mask])[0]
         if isinstance(self.tokenizer, BertTokenizer):
             cls = "[CLS]"
             sep = "[SEP]"
@@ -59,11 +58,7 @@ class ResPipe(Pipe):
                     tokens.append(cls)
                     shift = 0
 
-                starts = []
-                ends = []
-                for aspect in ins["aspects"]:
-                    starts.append(aspect["from"] + shift)
-                    ends.append(aspect["to"] + shift)
+
                 for aspect in ins["aspects"]:
                     target = aspect["polarity"]
                     start = aspect["from"] + shift
@@ -111,11 +106,11 @@ class ResPipe(Pipe):
         return new_bundle
 
     def process_from_file(self, paths) -> DataBundle:
-        data_bundle = ResLoader().load(paths)
+        data_bundle = DataLoader().load(paths)
         return self.process(data_bundle)
 
 
-class ResLoader(Loader):
+class DataLoader(Loader):
     def __init__(self):
         super().__init__()
 
@@ -131,12 +126,7 @@ class ResLoader(Loader):
         """
         data_bundle = DataBundle()
         folder_name = os.path.basename(paths)
-        fns = [
-            f"{folder_name}_Test.json",
-            f"{folder_name}_Train.json",
-        ]
-        if not os.path.exists(os.path.join(paths, fns[0])):
-            fns = [f"Test.json", f"Train.json"]
+        fns = [f"Test.json", f"Train.json"]
 
         for split, name in zip(["test", "train"], fns):
             fp = os.path.join(paths, name)
