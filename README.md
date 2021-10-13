@@ -36,7 +36,7 @@ All code runs on linux only. For `ASGCN`, `PWCN`, `RGAT`, please refer to their 
 
 
 ## Data
-I have received several issues on the reproduction about RoBERTa results, especially  dataset issues. I release these datasets in  `Dataset` folder for reproduction.
+I have received several issues on the reproduction about RoBERTa results, especially  dataset issues. I release these datasets in  `Dataset` folder for reproduction. If you want to process with our own data, you can refer to the python script in `Dataset` folder.
 
 
 
