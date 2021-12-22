@@ -1,18 +1,18 @@
 # RoBERTaABSA
 
-This repo contains code for [NAACL 2021](https://2021.naacl.org/program/accepted/) paper titled [Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa](https://arxiv.org/abs/2104.04986). Our work focuses on the Aspect-level Sentiment Classification subtask and achieves a new state-of-the-art (SOTA) result.
+Implementation  for  paper  [Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa](https://arxiv.org/abs/2104.04986) [`NAACL 2021`]. Our work focuses on  Aspect-level Sentiment Classification (ALSC) specifically.
 
 
 
 You can find more  information  here:
-- [Paper](https://arxiv.org/abs/2104.04986)
-- [Code](https://github.com/ROGERDJQ/RoBERTaABSA)
-- [Paperwithcode](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)
-- [Explainaboard](http://explainaboard.nlpedia.ai/leaderboard/task-absa/)
+- [`Arxiv`](https://arxiv.org/abs/2104.04986)
+- [`Github`](https://github.com/ROGERDJQ/RoBERTaABSA)
+- [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)
+- [`Explainaboard`](http://explainaboard.nlpedia.ai/leaderboard/task-absa/)
 
-For any questions about the implementation, feel free to create an issue or email me via jqdai19@fudan.edu.cn.
+For any questions about code or paper, feel free to create  issues or email me via jqdai19@fudan.edu.cn.
 
-For the solution to whole ABSA task, please have a look at our  ACL 2021 paper [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
+For  research  on  whole ABSA task, please have a look at our  ACL 2021 paper [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
 
 
 ## Dependencies
@@ -31,20 +31,22 @@ packages:
 - fitlog
    - pip install git+https://github.com/fastnlp/fitlog
 
-All code runs on linux only. For `ASGCN`, `PWCN`, `RGAT`, please refer to their own repos.
+All code runs on linux only. For details about `ASGCN`, `PWCN`, `RGAT`, please refer to their original repos.
 
 
 
 ## Data
-I have received several issues on the reproduction about RoBERTa results, especially  dataset issues. I release these datasets in  `Dataset` folder for reproduction. If you want to process with our own data, you can refer to the python script in `Dataset` folder.
+English Datasets are released in  `Dataset` folder for reproduction. If you want to process with your own data, please refer to the python script in `Dataset` folder.
 
 
 
 
 
 ## Usage
-- To get our SOTA results with RoBARTa in [Paperwithcode](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for), simply run the `finetune.py` in `Train` folder.  Before the code running, make sure the `--data_dir` and `--dataset` arguments are filled in correct file path.
-- To reproduce the experiments in our paper  includes four steps:
+### To get ALSC result:
+- To get  ALSC result (see [Paperwithcode](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder.  Before the code running, make sure the `--data_dir` and `--dataset` arguments are filled with correct dataset filepath and name.
+### To reproduce all experiments in paper:
+- It includes four steps to reproduce all experiments in our paper:
   1. Fine-tuning the model on ABSA datasets using the code from the `Train` folder, which will save the fine-tuned models.
     ```bash
     python finetune.py --data_dir /user/project/dataset/ --dataset Restaurant
