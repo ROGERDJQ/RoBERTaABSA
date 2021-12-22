@@ -1,6 +1,6 @@
 # RoBERTaABSA
 
-Implementation  for  paper  [Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa](https://arxiv.org/abs/2104.04986) [`NAACL 2021`]. Our work focuses on  Aspect-level Sentiment Classification (ALSC) specifically.
+Implementation  for  paper  [`Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa`](https://arxiv.org/abs/2104.04986) [`NAACL 2021`]. Our work focuses on  Aspect-level Sentiment Classification (ALSC) specifically.
 
 
 
