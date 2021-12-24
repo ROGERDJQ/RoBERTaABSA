@@ -24,8 +24,10 @@ from pipe import DataPipe
 # fitlog.debug()
 root_fp = r"/your/work/space/RoBERTaABSA/Train"
 os.makedirs(f"{root_fp}/FT_logs", exist_ok=True)
-fitlog.set_log_dir(f"{root_fp}/FT_logs")
 
+
+fitlog.set_log_dir(f"{root_fp}/FT_logs")
+fitlog.set_rng_seed()
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
@@ -62,23 +64,18 @@ parser.add_argument(
 )
 parser.add_argument("--save_embed", default=1, type=int)
 parser.add_argument("--batch_size", default=32, type=int)
-
+parser.add_argument("--n_epochs", default=20, type=int)
+parser.add_argument("--pool", default="max")
+parser.add_argument("--dropout", default=0.5,type=float)
+parser.add_argument("--warmup",default=0.01,type=float)
 
 args = parser.parse_args()
 
 args.data_dir = r"/your/work/space/RoBERTaABSA/Dataset"
 
-fitlog.add_hyper_in_file(__file__)
 fitlog.add_hyper(args)
-
-
 print(args)
-#######hyper
-n_epochs = 20
-pool = "max"
-smooth_eps = 0.0
-dropout = 0.5
-#######hyper
+
 
 
 model_type = args.model_name.split("-")[0]
@@ -175,9 +172,9 @@ class AspectModel(nn.Module):
 
 model = AspectModel(
     embed,
-    dropout=dropout,
+    dropout=args.dropout,
     num_classes=len(data_bundle.get_vocab("target")) - 1,
-    pool=pool,
+    pool=args.pool,
 )
 
 no_decay = ["bias", "LayerNorm.weight"]
@@ -200,7 +197,7 @@ optimizer_grouped_parameters = [
 optimizer = optim.AdamW(optimizer_grouped_parameters, lr=args.lr)
 
 callbacks = []
-callbacks.append(WarmupCallback(0.01, "constant"))
+callbacks.append(WarmupCallback(args.warmup, "constant"))
 callbacks.append(FitlogCallback())
 
 
@@ -249,13 +246,13 @@ trainer = Trainer(
     tr_data,
     model,
     optimizer=optimizer,
-    loss=SmoothLoss(smooth_eps),
+    loss=SmoothLoss(0),
     batch_size=args.batch_size,
     sampler=BucketSampler(),
     drop_last=False,
     update_every=32 // args.batch_size,
     num_workers=2,
-    n_epochs=n_epochs,
+    n_epochs=args.n_epochs,
     print_every=5,
     dev_data=data_bundle.get_dataset("test"),
     metrics=[AccuracyMetric(), ClassifyFPreRecMetric(f_type="macro")],

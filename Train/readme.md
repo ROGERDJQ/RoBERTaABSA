@@ -1,39 +1,27 @@
-The code is mainly used for finetuning pre-train models on ABSA datasets, where the `pipe.py` is the data preprocessing code; the `finetune.py` is used to fine-tune and get the fine-tuned model.
+This folder  mainly contains codes for fine-tuning  models on ABSA datasets.
+- `pipe.py` pre-processes data. 
+- `finetune.py` fine-tunes models, which  also  save the fine-tuned models after fine-tuning.
 
 ## Usage
 
-1. Install the fastNLp and the fitlog. Our code heavily rely on these two packages.
+1. Install fastNLP and fitlog. Our codes  rely on this two packages.
+
+
+
+2. Run the codes with command:
 
 ```bash
-pip install fastNLP fitlog
+  python finetune.py 
+  --data_dir {/your/dataset_filepath/} 
+  --dataset {dataset_name}
 ```
 
-2. Run the code with command:
-
-```bash
-  python finetune.py --data_dir /user/project/dataset/ --dataset Restaurant
-```
-
-- The `--data_dir` and `--dataset` arguments are explained in the following `Notes`.
 
 ## Notes
 
-0. The code are based on fastNLP and Fitlog. More can be found in [fastNLP](https://fastnlp.readthedocs.io/zh/latest/) and [fitlog](https://fitlog.readthedocs.io/zh/latest/).
-1. The dataset path in our original code is:
+0. The codes are based on fastNLP and Fitlog. More can be found in [fastNLP](https://fastnlp.readthedocs.io/zh/latest/) and [fitlog](https://fitlog.readthedocs.io/zh/latest/).
+1. The codes will use data files named as  `Train/Test.json`  under the  `{data_dir}/{dataset}` folder, e.g. `{RoBERTaABSA/Dataset}/{Restaurant}`, so please make sure this two files are available.
 
-```bash
-(--data_dir)/user/project/dataset/
-(--dataset) |---Restaurant
-            |------Train.json
-            |------Test.json
-(--dataset) |---Laptop
-            |------Train.json
-            |------Test.json
-(--dataset) |---fr
-            |------Train.json
-            |------Test.json
-...
-```
 
 2. The `Train/Test.json` data files are in the following format：
 
