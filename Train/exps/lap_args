@@ -1,0 +1,1 @@
+Namespace(batch_size=32, data_dir='RoBERTaABSA/Dataset', dataset='Laptop', dropout=0.5, lr=2e-05, model_name='roberta-en', n_epochs=40, pool='max', save_embed=1, warmup=0.01)

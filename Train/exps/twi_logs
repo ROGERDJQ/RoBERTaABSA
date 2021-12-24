@@ -1,0 +1,999 @@
+[epoch:   1 step:    5] train loss: 0.536031 time: 0:00:01
+[epoch:   1 step:   10] train loss: 0.535995 time: 0:00:02
+[epoch:   1 step:   15] train loss: 0.537941 time: 0:00:03
+[epoch:   1 step:   20] train loss: 0.536634 time: 0:00:04
+[epoch:   1 step:   25] train loss: 0.523583 time: 0:00:05
+[epoch:   1 step:   30] train loss: 0.527254 time: 0:00:06
+[epoch:   1 step:   35] train loss: 0.523136 time: 0:00:07
+[epoch:   1 step:   40] train loss: 0.528267 time: 0:00:09
+[epoch:   1 step:   45] train loss: 0.522251 time: 0:00:10
+[epoch:   1 step:   50] train loss: 0.507585 time: 0:00:11
+[epoch:   1 step:   55] train loss: 0.519184 time: 0:00:12
+[epoch:   1 step:   60] train loss: 0.55706 time: 0:00:13
+[epoch:   1 step:   65] train loss: 0.499733 time: 0:00:14
+[epoch:   1 step:   70] train loss: 0.503411 time: 0:00:15
+[epoch:   1 step:   75] train loss: 0.520186 time: 0:00:16
+[epoch:   1 step:   80] train loss: 0.536899 time: 0:00:17
+[epoch:   1 step:   85] train loss: 0.508418 time: 0:00:18
+[epoch:   1 step:   90] train loss: 0.525817 time: 0:00:19
+[epoch:   1 step:   95] train loss: 0.507424 time: 0:00:20
+Evaluate data in 1.1 seconds!
+Evaluation on dev at Epoch 1/40. Step:98/3920: 
+AccuracyMetric: acc=0.5
+ClassifyFPreRecMetric: f=0.222222, pre=0.166667, rec=0.333333
+
+[epoch:   2 step:  100] train loss: 0.51359 time: 0:00:23
+[epoch:   2 step:  105] train loss: 0.507423 time: 0:00:24
+[epoch:   2 step:  110] train loss: 0.501804 time: 0:00:25
+[epoch:   2 step:  115] train loss: 0.500653 time: 0:00:26
+[epoch:   2 step:  120] train loss: 0.503833 time: 0:00:27
+[epoch:   2 step:  125] train loss: 0.511541 time: 0:00:28
+[epoch:   2 step:  130] train loss: 0.502082 time: 0:00:29
+[epoch:   2 step:  135] train loss: 0.480427 time: 0:00:30
+[epoch:   2 step:  140] train loss: 0.48152 time: 0:00:31
+[epoch:   2 step:  145] train loss: 0.477182 time: 0:00:32
+[epoch:   2 step:  150] train loss: 0.423555 time: 0:00:33
+[epoch:   2 step:  155] train loss: 0.463542 time: 0:00:34
+[epoch:   2 step:  160] train loss: 0.458131 time: 0:00:35
+[epoch:   2 step:  165] train loss: 0.462503 time: 0:00:36
+[epoch:   2 step:  170] train loss: 0.427005 time: 0:00:37
+[epoch:   2 step:  175] train loss: 0.459956 time: 0:00:38
+[epoch:   2 step:  180] train loss: 0.409095 time: 0:00:39
+[epoch:   2 step:  185] train loss: 0.405756 time: 0:00:40
+[epoch:   2 step:  190] train loss: 0.413964 time: 0:00:41
+[epoch:   2 step:  195] train loss: 0.364006 time: 0:00:42
+Evaluate data in 1.35 seconds!
+Evaluation on dev at Epoch 2/40. Step:198/3920: 
+AccuracyMetric: acc=0.700867
+ClassifyFPreRecMetric: f=0.664975, pre=0.712456, rec=0.646435
+
+[epoch:   3 step:  200] train loss: 0.381254 time: 0:00:45
+[epoch:   3 step:  205] train loss: 0.390047 time: 0:00:46
+[epoch:   3 step:  210] train loss: 0.351129 time: 0:00:47
+[epoch:   3 step:  215] train loss: 0.368343 time: 0:00:48
+[epoch:   3 step:  220] train loss: 0.30558 time: 0:00:49
+[epoch:   3 step:  225] train loss: 0.373406 time: 0:00:51
+[epoch:   3 step:  230] train loss: 0.332124 time: 0:00:52
+[epoch:   3 step:  235] train loss: 0.349088 time: 0:00:52
+[epoch:   3 step:  240] train loss: 0.355377 time: 0:00:53
+[epoch:   3 step:  245] train loss: 0.376089 time: 0:00:55
+[epoch:   3 step:  250] train loss: 0.363629 time: 0:00:56
+[epoch:   3 step:  255] train loss: 0.325999 time: 0:00:57
+[epoch:   3 step:  260] train loss: 0.356898 time: 0:00:58
+[epoch:   3 step:  265] train loss: 0.311019 time: 0:00:59
+[epoch:   3 step:  270] train loss: 0.299427 time: 0:01:00
+[epoch:   3 step:  275] train loss: 0.330834 time: 0:01:01
+[epoch:   3 step:  280] train loss: 0.306185 time: 0:01:02
+[epoch:   3 step:  285] train loss: 0.323877 time: 0:01:03
+[epoch:   3 step:  290] train loss: 0.315676 time: 0:01:04
+[epoch:   3 step:  295] train loss: 0.284933 time: 0:01:05
+Evaluate data in 1.17 seconds!
+Evaluation on dev at Epoch 3/40. Step:297/3920: 
+AccuracyMetric: acc=0.741329
+ClassifyFPreRecMetric: f=0.722226, pre=0.750638, rec=0.705202
+
+[epoch:   4 step:  300] train loss: 0.261346 time: 0:01:08
+[epoch:   4 step:  305] train loss: 0.292676 time: 0:01:09
+[epoch:   4 step:  310] train loss: 0.263477 time: 0:01:10
+[epoch:   4 step:  315] train loss: 0.282915 time: 0:01:11
+[epoch:   4 step:  320] train loss: 0.268194 time: 0:01:12
+[epoch:   4 step:  325] train loss: 0.265006 time: 0:01:13
+[epoch:   4 step:  330] train loss: 0.246019 time: 0:01:14
+[epoch:   4 step:  335] train loss: 0.286265 time: 0:01:15
+[epoch:   4 step:  340] train loss: 0.292699 time: 0:01:16
+[epoch:   4 step:  345] train loss: 0.284021 time: 0:01:17
+[epoch:   4 step:  350] train loss: 0.272816 time: 0:01:18
+[epoch:   4 step:  355] train loss: 0.284476 time: 0:01:19
+[epoch:   4 step:  360] train loss: 0.258328 time: 0:01:21
+[epoch:   4 step:  365] train loss: 0.311951 time: 0:01:22
+[epoch:   4 step:  370] train loss: 0.250561 time: 0:01:23
+[epoch:   4 step:  375] train loss: 0.269629 time: 0:01:24
+[epoch:   4 step:  380] train loss: 0.250143 time: 0:01:25
+[epoch:   4 step:  385] train loss: 0.282431 time: 0:01:26
+[epoch:   4 step:  390] train loss: 0.266464 time: 0:01:27
+[epoch:   4 step:  395] train loss: 0.270183 time: 0:01:28
+Evaluate data in 1.19 seconds!
+Evaluation on dev at Epoch 4/40. Step:396/3920: 
+AccuracyMetric: acc=0.754335
+ClassifyFPreRecMetric: f=0.731973, pre=0.759707, rec=0.720617
+
+[epoch:   5 step:  400] train loss: 0.222225 time: 0:01:31
+[epoch:   5 step:  405] train loss: 0.227426 time: 0:01:32
+[epoch:   5 step:  410] train loss: 0.199225 time: 0:01:33
+[epoch:   5 step:  415] train loss: 0.178626 time: 0:01:34
+[epoch:   5 step:  420] train loss: 0.195415 time: 0:01:35
+[epoch:   5 step:  425] train loss: 0.206654 time: 0:01:36
+[epoch:   5 step:  430] train loss: 0.198019 time: 0:01:37
+[epoch:   5 step:  435] train loss: 0.227701 time: 0:01:38
+[epoch:   5 step:  440] train loss: 0.204474 time: 0:01:39
+[epoch:   5 step:  445] train loss: 0.262539 time: 0:01:40
+[epoch:   5 step:  450] train loss: 0.246077 time: 0:01:41
+[epoch:   5 step:  455] train loss: 0.222604 time: 0:01:42
+[epoch:   5 step:  460] train loss: 0.250567 time: 0:01:43
+[epoch:   5 step:  465] train loss: 0.279655 time: 0:01:44
+[epoch:   5 step:  470] train loss: 0.239923 time: 0:01:45
+[epoch:   5 step:  475] train loss: 0.267284 time: 0:01:46
+[epoch:   5 step:  480] train loss: 0.257622 time: 0:01:47
+[epoch:   5 step:  485] train loss: 0.237521 time: 0:01:48
+[epoch:   5 step:  490] train loss: 0.211313 time: 0:01:50
+[epoch:   5 step:  495] train loss: 0.206038 time: 0:01:51
+Evaluate data in 1.3 seconds!
+Evaluation on dev at Epoch 5/40. Step:496/3920: 
+AccuracyMetric: acc=0.75289
+ClassifyFPreRecMetric: f=0.732424, pre=0.760516, rec=0.7158
+
+[epoch:   6 step:  500] train loss: 0.264732 time: 0:01:53
+[epoch:   6 step:  505] train loss: 0.146616 time: 0:01:54
+[epoch:   6 step:  510] train loss: 0.187055 time: 0:01:55
+[epoch:   6 step:  515] train loss: 0.163339 time: 0:01:56
+[epoch:   6 step:  520] train loss: 0.18224 time: 0:01:57
+[epoch:   6 step:  525] train loss: 0.109542 time: 0:01:58
+[epoch:   6 step:  530] train loss: 0.190965 time: 0:01:59
+[epoch:   6 step:  535] train loss: 0.175517 time: 0:02:00
+[epoch:   6 step:  540] train loss: 0.172865 time: 0:02:01
+[epoch:   6 step:  545] train loss: 0.219775 time: 0:02:03
+[epoch:   6 step:  550] train loss: 0.132967 time: 0:02:04
+[epoch:   6 step:  555] train loss: 0.188659 time: 0:02:05
+[epoch:   6 step:  560] train loss: 0.218945 time: 0:02:06
+[epoch:   6 step:  565] train loss: 0.158911 time: 0:02:07
+[epoch:   6 step:  570] train loss: 0.125005 time: 0:02:08
+[epoch:   6 step:  575] train loss: 0.181928 time: 0:02:09
+[epoch:   6 step:  580] train loss: 0.20218 time: 0:02:10
+[epoch:   6 step:  585] train loss: 0.191884 time: 0:02:11
+[epoch:   6 step:  590] train loss: 0.178751 time: 0:02:12
+[epoch:   6 step:  595] train loss: 0.15992 time: 0:02:13
+Evaluate data in 1.17 seconds!
+Evaluation on dev at Epoch 6/40. Step:596/3920: 
+AccuracyMetric: acc=0.735549
+ClassifyFPreRecMetric: f=0.729451, pre=0.722981, rec=0.737958
+
+[epoch:   7 step:  600] train loss: 0.144754 time: 0:02:15
+[epoch:   7 step:  605] train loss: 0.107503 time: 0:02:16
+[epoch:   7 step:  610] train loss: 0.135631 time: 0:02:17
+[epoch:   7 step:  615] train loss: 0.143273 time: 0:02:18
+[epoch:   7 step:  620] train loss: 0.14186 time: 0:02:19
+[epoch:   7 step:  625] train loss: 0.14841 time: 0:02:20
+[epoch:   7 step:  630] train loss: 0.110676 time: 0:02:21
+[epoch:   7 step:  635] train loss: 0.120286 time: 0:02:22
+[epoch:   7 step:  640] train loss: 0.131819 time: 0:02:23
+[epoch:   7 step:  645] train loss: 0.151468 time: 0:02:24
+[epoch:   7 step:  650] train loss: 0.141126 time: 0:02:26
+[epoch:   7 step:  655] train loss: 0.12603 time: 0:02:27
+[epoch:   7 step:  660] train loss: 0.15325 time: 0:02:28
+[epoch:   7 step:  665] train loss: 0.16613 time: 0:02:29
+[epoch:   7 step:  670] train loss: 0.130261 time: 0:02:30
+[epoch:   7 step:  675] train loss: 0.127141 time: 0:02:31
+[epoch:   7 step:  680] train loss: 0.0906897 time: 0:02:32
+[epoch:   7 step:  685] train loss: 0.124669 time: 0:02:33
+[epoch:   7 step:  690] train loss: 0.13323 time: 0:02:34
+[epoch:   7 step:  695] train loss: 0.164989 time: 0:02:35
+Evaluate data in 1.46 seconds!
+Evaluation on dev at Epoch 7/40. Step:695/3920: 
+AccuracyMetric: acc=0.75
+ClassifyFPreRecMetric: f=0.742743, pre=0.738595, rec=0.747592
+
+[epoch:   8 step:  700] train loss: 0.128046 time: 0:02:38
+[epoch:   8 step:  705] train loss: 0.0864347 time: 0:02:39
+[epoch:   8 step:  710] train loss: 0.128414 time: 0:02:40
+[epoch:   8 step:  715] train loss: 0.122221 time: 0:02:41
+[epoch:   8 step:  720] train loss: 0.05856 time: 0:02:42
+[epoch:   8 step:  725] train loss: 0.0933965 time: 0:02:43
+[epoch:   8 step:  730] train loss: 0.0807484 time: 0:02:44
+[epoch:   8 step:  735] train loss: 0.106931 time: 0:02:45
+[epoch:   8 step:  740] train loss: 0.106524 time: 0:02:46
+[epoch:   8 step:  745] train loss: 0.0838485 time: 0:02:47
+[epoch:   8 step:  750] train loss: 0.125601 time: 0:02:48
+[epoch:   8 step:  755] train loss: 0.108545 time: 0:02:49
+[epoch:   8 step:  760] train loss: 0.0832948 time: 0:02:50
+[epoch:   8 step:  765] train loss: 0.127521 time: 0:02:51
+[epoch:   8 step:  770] train loss: 0.113057 time: 0:02:53
+[epoch:   8 step:  775] train loss: 0.0991264 time: 0:02:54
+[epoch:   8 step:  780] train loss: 0.0985291 time: 0:02:55
+[epoch:   8 step:  785] train loss: 0.106199 time: 0:02:56
+[epoch:   8 step:  790] train loss: 0.131367 time: 0:02:57
+Evaluate data in 1.21 seconds!
+Evaluation on dev at Epoch 8/40. Step:794/3920: 
+AccuracyMetric: acc=0.75
+ClassifyFPreRecMetric: f=0.734898, pre=0.743712, rec=0.736031
+
+[epoch:   9 step:  795] train loss: 0.102821 time: 0:02:59
+[epoch:   9 step:  800] train loss: 0.0984113 time: 0:03:00
+[epoch:   9 step:  805] train loss: 0.131605 time: 0:03:01
+[epoch:   9 step:  810] train loss: 0.0826967 time: 0:03:02
+[epoch:   9 step:  815] train loss: 0.113836 time: 0:03:03
+[epoch:   9 step:  820] train loss: 0.113297 time: 0:03:05
+[epoch:   9 step:  825] train loss: 0.0743379 time: 0:03:06
+[epoch:   9 step:  830] train loss: 0.0912863 time: 0:03:07
+[epoch:   9 step:  835] train loss: 0.0817968 time: 0:03:08
+[epoch:   9 step:  840] train loss: 0.0588987 time: 0:03:09
+[epoch:   9 step:  845] train loss: 0.0529251 time: 0:03:10
+[epoch:   9 step:  850] train loss: 0.0774745 time: 0:03:11
+[epoch:   9 step:  855] train loss: 0.0429411 time: 0:03:12
+[epoch:   9 step:  860] train loss: 0.092684 time: 0:03:13
+[epoch:   9 step:  865] train loss: 0.0984724 time: 0:03:14
+[epoch:   9 step:  870] train loss: 0.101209 time: 0:03:15
+[epoch:   9 step:  875] train loss: 0.108227 time: 0:03:16
+[epoch:   9 step:  880] train loss: 0.0664512 time: 0:03:17
+[epoch:   9 step:  885] train loss: 0.0761601 time: 0:03:18
+[epoch:   9 step:  890] train loss: 0.0903754 time: 0:03:19
+Evaluate data in 1.3 seconds!
+Evaluation on dev at Epoch 9/40. Step:893/3920: 
+AccuracyMetric: acc=0.745665
+ClassifyFPreRecMetric: f=0.739446, pre=0.732108, rec=0.750482
+
+[epoch:  10 step:  895] train loss: 0.0860366 time: 0:03:22
+[epoch:  10 step:  900] train loss: 0.0861824 time: 0:03:23
+[epoch:  10 step:  905] train loss: 0.0869433 time: 0:03:24
+[epoch:  10 step:  910] train loss: 0.056418 time: 0:03:25
+[epoch:  10 step:  915] train loss: 0.0685375 time: 0:03:26
+[epoch:  10 step:  920] train loss: 0.0576117 time: 0:03:27
+[epoch:  10 step:  925] train loss: 0.0509885 time: 0:03:28
+[epoch:  10 step:  930] train loss: 0.0635147 time: 0:03:29
+[epoch:  10 step:  935] train loss: 0.0676475 time: 0:03:30
+[epoch:  10 step:  940] train loss: 0.0721742 time: 0:03:31
+[epoch:  10 step:  945] train loss: 0.0439315 time: 0:03:32
+[epoch:  10 step:  950] train loss: 0.0800205 time: 0:03:33
+[epoch:  10 step:  955] train loss: 0.0535464 time: 0:03:34
+[epoch:  10 step:  960] train loss: 0.0879212 time: 0:03:36
+[epoch:  10 step:  965] train loss: 0.0328843 time: 0:03:37
+[epoch:  10 step:  970] train loss: 0.0774429 time: 0:03:38
+[epoch:  10 step:  975] train loss: 0.0704649 time: 0:03:39
+[epoch:  10 step:  980] train loss: 0.0716945 time: 0:03:40
+[epoch:  10 step:  985] train loss: 0.0964242 time: 0:03:41
+[epoch:  10 step:  990] train loss: 0.0622991 time: 0:03:42
+Evaluate data in 1.3 seconds!
+Evaluation on dev at Epoch 10/40. Step:993/3920: 
+AccuracyMetric: acc=0.742775
+ClassifyFPreRecMetric: f=0.724876, pre=0.740534, rec=0.713873
+
+[epoch:  11 step:  995] train loss: 0.0871093 time: 0:03:44
+[epoch:  11 step: 1000] train loss: 0.031593 time: 0:03:46
+[epoch:  11 step: 1005] train loss: 0.058354 time: 0:03:47
+[epoch:  11 step: 1010] train loss: 0.0569182 time: 0:03:48
+[epoch:  11 step: 1015] train loss: 0.0597999 time: 0:03:49
+[epoch:  11 step: 1020] train loss: 0.0312662 time: 0:03:50
+[epoch:  11 step: 1025] train loss: 0.101726 time: 0:03:51
+[epoch:  11 step: 1030] train loss: 0.0461737 time: 0:03:52
+[epoch:  11 step: 1035] train loss: 0.055321 time: 0:03:53
+[epoch:  11 step: 1040] train loss: 0.0434879 time: 0:03:54
+[epoch:  11 step: 1045] train loss: 0.0345972 time: 0:03:55
+[epoch:  11 step: 1050] train loss: 0.0632929 time: 0:03:56
+[epoch:  11 step: 1055] train loss: 0.0690901 time: 0:03:57
+[epoch:  11 step: 1060] train loss: 0.0635191 time: 0:03:58
+[epoch:  11 step: 1065] train loss: 0.0574505 time: 0:03:59
+[epoch:  11 step: 1070] train loss: 0.0503701 time: 0:04:00
+[epoch:  11 step: 1075] train loss: 0.053573 time: 0:04:01
+[epoch:  11 step: 1080] train loss: 0.0585618 time: 0:04:02
+[epoch:  11 step: 1085] train loss: 0.04678 time: 0:04:03
+[epoch:  11 step: 1090] train loss: 0.0708528 time: 0:04:05
+Evaluate data in 1.3 seconds!
+Evaluation on dev at Epoch 11/40. Step:1092/3920: 
+AccuracyMetric: acc=0.734104
+ClassifyFPreRecMetric: f=0.730572, pre=0.722953, rec=0.742775
+
+[epoch:  12 step: 1095] train loss: 0.0554723 time: 0:04:07
+[epoch:  12 step: 1100] train loss: 0.0302531 time: 0:04:08
+[epoch:  12 step: 1105] train loss: 0.0628537 time: 0:04:09
+[epoch:  12 step: 1110] train loss: 0.0291 time: 0:04:10
+[epoch:  12 step: 1115] train loss: 0.0618702 time: 0:04:11
+[epoch:  12 step: 1120] train loss: 0.0540646 time: 0:04:12
+[epoch:  12 step: 1125] train loss: 0.0373576 time: 0:04:13
+[epoch:  12 step: 1130] train loss: 0.0292706 time: 0:04:14
+[epoch:  12 step: 1135] train loss: 0.0284195 time: 0:04:15
+[epoch:  12 step: 1140] train loss: 0.0270041 time: 0:04:17
+[epoch:  12 step: 1145] train loss: 0.0614676 time: 0:04:18
+[epoch:  12 step: 1150] train loss: 0.0424563 time: 0:04:19
+[epoch:  12 step: 1155] train loss: 0.0174861 time: 0:04:19
+[epoch:  12 step: 1160] train loss: 0.037501 time: 0:04:21
+[epoch:  12 step: 1165] train loss: 0.0668722 time: 0:04:22
+[epoch:  12 step: 1170] train loss: 0.0323004 time: 0:04:23
+[epoch:  12 step: 1175] train loss: 0.0249001 time: 0:04:24
+[epoch:  12 step: 1180] train loss: 0.0410758 time: 0:04:25
+[epoch:  12 step: 1185] train loss: 0.0511609 time: 0:04:26
+[epoch:  12 step: 1190] train loss: 0.0351875 time: 0:04:27
+Evaluate data in 1.38 seconds!
+Evaluation on dev at Epoch 12/40. Step:1192/3920: 
+AccuracyMetric: acc=0.74422
+ClassifyFPreRecMetric: f=0.740882, pre=0.733328, rec=0.754335
+
+[epoch:  13 step: 1195] train loss: 0.0570627 time: 0:04:30
+[epoch:  13 step: 1200] train loss: 0.0425642 time: 0:04:31
+[epoch:  13 step: 1205] train loss: 0.0307977 time: 0:04:32
+[epoch:  13 step: 1210] train loss: 0.0171937 time: 0:04:33
+[epoch:  13 step: 1215] train loss: 0.0395217 time: 0:04:34
+[epoch:  13 step: 1220] train loss: 0.0164953 time: 0:04:35
+[epoch:  13 step: 1225] train loss: 0.0568897 time: 0:04:36
+[epoch:  13 step: 1230] train loss: 0.03775 time: 0:04:37
+[epoch:  13 step: 1235] train loss: 0.0307759 time: 0:04:38
+[epoch:  13 step: 1240] train loss: 0.0406256 time: 0:04:39
+[epoch:  13 step: 1245] train loss: 0.0294184 time: 0:04:40
+[epoch:  13 step: 1250] train loss: 0.0254459 time: 0:04:41
+[epoch:  13 step: 1255] train loss: 0.0343561 time: 0:04:42
+[epoch:  13 step: 1260] train loss: 0.0344933 time: 0:04:43
+[epoch:  13 step: 1265] train loss: 0.027168 time: 0:04:44
+[epoch:  13 step: 1270] train loss: 0.0154786 time: 0:04:45
+[epoch:  13 step: 1275] train loss: 0.0476025 time: 0:04:46
+[epoch:  13 step: 1280] train loss: 0.020989 time: 0:04:47
+[epoch:  13 step: 1285] train loss: 0.0240869 time: 0:04:48
+[epoch:  13 step: 1290] train loss: 0.0448747 time: 0:04:50
+Evaluate data in 1.41 seconds!
+Evaluation on dev at Epoch 13/40. Step:1291/3920: 
+AccuracyMetric: acc=0.751445
+ClassifyFPreRecMetric: f=0.745852, pre=0.74451, rec=0.748555
+
+[epoch:  14 step: 1295] train loss: 0.0367956 time: 0:04:52
+[epoch:  14 step: 1300] train loss: 0.0725608 time: 0:04:53
+[epoch:  14 step: 1305] train loss: 0.0194747 time: 0:04:54
+[epoch:  14 step: 1310] train loss: 0.0270787 time: 0:04:56
+[epoch:  14 step: 1315] train loss: 0.0322032 time: 0:04:57
+[epoch:  14 step: 1320] train loss: 0.0112191 time: 0:04:58
+[epoch:  14 step: 1325] train loss: 0.037199 time: 0:04:59
+[epoch:  14 step: 1330] train loss: 0.0335368 time: 0:05:00
+[epoch:  14 step: 1335] train loss: 0.0348674 time: 0:05:01
+[epoch:  14 step: 1340] train loss: 0.05252 time: 0:05:02
+[epoch:  14 step: 1345] train loss: 0.0498154 time: 0:05:03
+[epoch:  14 step: 1350] train loss: 0.0415434 time: 0:05:04
+[epoch:  14 step: 1355] train loss: 0.0377887 time: 0:05:05
+[epoch:  14 step: 1360] train loss: 0.0456203 time: 0:05:06
+[epoch:  14 step: 1365] train loss: 0.0190428 time: 0:05:07
+[epoch:  14 step: 1370] train loss: 0.0525773 time: 0:05:08
+[epoch:  14 step: 1375] train loss: 0.051987 time: 0:05:09
+[epoch:  14 step: 1380] train loss: 0.0573492 time: 0:05:10
+[epoch:  14 step: 1385] train loss: 0.030549 time: 0:05:11
+[epoch:  14 step: 1390] train loss: 0.00897491 time: 0:05:12
+Evaluate data in 1.27 seconds!
+Evaluation on dev at Epoch 14/40. Step:1390/3920: 
+AccuracyMetric: acc=0.758671
+ClassifyFPreRecMetric: f=0.753553, pre=0.745819, rec=0.764933
+
+[epoch:  15 step: 1395] train loss: 0.0210236 time: 0:05:15
+[epoch:  15 step: 1400] train loss: 0.0478793 time: 0:05:16
+[epoch:  15 step: 1405] train loss: 0.037777 time: 0:05:17
+[epoch:  15 step: 1410] train loss: 0.0150089 time: 0:05:19
+[epoch:  15 step: 1415] train loss: 0.0390689 time: 0:05:20
+[epoch:  15 step: 1420] train loss: 0.0202735 time: 0:05:21
+[epoch:  15 step: 1425] train loss: 0.0345663 time: 0:05:22
+[epoch:  15 step: 1430] train loss: 0.025818 time: 0:05:23
+[epoch:  15 step: 1435] train loss: 0.0245797 time: 0:05:24
+[epoch:  15 step: 1440] train loss: 0.0166933 time: 0:05:25
+[epoch:  15 step: 1445] train loss: 0.0332998 time: 0:05:26
+[epoch:  15 step: 1450] train loss: 0.0362553 time: 0:05:27
+[epoch:  15 step: 1455] train loss: 0.0297012 time: 0:05:28
+[epoch:  15 step: 1460] train loss: 0.040996 time: 0:05:29
+[epoch:  15 step: 1465] train loss: 0.0409813 time: 0:05:30
+[epoch:  15 step: 1470] train loss: 0.0240257 time: 0:05:31
+[epoch:  15 step: 1475] train loss: 0.045381 time: 0:05:32
+[epoch:  15 step: 1480] train loss: 0.0302577 time: 0:05:33
+[epoch:  15 step: 1485] train loss: 0.0447099 time: 0:05:34
+[epoch:  15 step: 1490] train loss: 0.021669 time: 0:05:35
+Evaluate data in 1.18 seconds!
+Evaluation on dev at Epoch 15/40. Step:1490/3920: 
+AccuracyMetric: acc=0.75578
+ClassifyFPreRecMetric: f=0.748723, pre=0.742821, rec=0.756262
+
+[epoch:  16 step: 1495] train loss: 0.0097671 time: 0:05:38
+[epoch:  16 step: 1500] train loss: 0.018087 time: 0:05:39
+[epoch:  16 step: 1505] train loss: 0.0310713 time: 0:05:40
+[epoch:  16 step: 1510] train loss: 0.0192053 time: 0:05:41
+[epoch:  16 step: 1515] train loss: 0.0327408 time: 0:05:42
+[epoch:  16 step: 1520] train loss: 0.0148702 time: 0:05:43
+[epoch:  16 step: 1525] train loss: 0.0175036 time: 0:05:44
+[epoch:  16 step: 1530] train loss: 0.0204848 time: 0:05:45
+[epoch:  16 step: 1535] train loss: 0.0464383 time: 0:05:46
+[epoch:  16 step: 1540] train loss: 0.0207419 time: 0:05:47
+[epoch:  16 step: 1545] train loss: 0.0228754 time: 0:05:48
+[epoch:  16 step: 1550] train loss: 0.0307696 time: 0:05:49
+[epoch:  16 step: 1555] train loss: 0.00569999 time: 0:05:50
+[epoch:  16 step: 1560] train loss: 0.0201449 time: 0:05:51
+[epoch:  16 step: 1565] train loss: 0.0227594 time: 0:05:52
+[epoch:  16 step: 1570] train loss: 0.0099575 time: 0:05:54
+[epoch:  16 step: 1575] train loss: 0.0176292 time: 0:05:55
+[epoch:  16 step: 1580] train loss: 0.028212 time: 0:05:56
+[epoch:  16 step: 1585] train loss: 0.0355852 time: 0:05:57
+Evaluate data in 1.31 seconds!
+Evaluation on dev at Epoch 16/40. Step:1589/3920: 
+AccuracyMetric: acc=0.758671
+ClassifyFPreRecMetric: f=0.75379, pre=0.749278, rec=0.759152
+
+[epoch:  17 step: 1590] train loss: 0.0296843 time: 0:05:59
+[epoch:  17 step: 1595] train loss: 0.015526 time: 0:06:00
+[epoch:  17 step: 1600] train loss: 0.0176695 time: 0:06:01
+[epoch:  17 step: 1605] train loss: 0.0264885 time: 0:06:02
+[epoch:  17 step: 1610] train loss: 0.0304884 time: 0:06:04
+[epoch:  17 step: 1615] train loss: 0.01926 time: 0:06:05
+[epoch:  17 step: 1620] train loss: 0.0168767 time: 0:06:06
+[epoch:  17 step: 1625] train loss: 0.0148921 time: 0:06:07
+[epoch:  17 step: 1630] train loss: 0.0456048 time: 0:06:08
+[epoch:  17 step: 1635] train loss: 0.0329271 time: 0:06:09
+[epoch:  17 step: 1640] train loss: 0.0256027 time: 0:06:10
+[epoch:  17 step: 1645] train loss: 0.0121978 time: 0:06:11
+[epoch:  17 step: 1650] train loss: 0.00638439 time: 0:06:12
+[epoch:  17 step: 1655] train loss: 0.0351856 time: 0:06:13
+[epoch:  17 step: 1660] train loss: 0.0260348 time: 0:06:14
+[epoch:  17 step: 1665] train loss: 0.0268449 time: 0:06:15
+[epoch:  17 step: 1670] train loss: 0.0098274 time: 0:06:16
+[epoch:  17 step: 1675] train loss: 0.0340721 time: 0:06:17
+[epoch:  17 step: 1680] train loss: 0.0267362 time: 0:06:18
+[epoch:  17 step: 1685] train loss: 0.0114627 time: 0:06:19
+Evaluate data in 1.25 seconds!
+Evaluation on dev at Epoch 17/40. Step:1688/3920: 
+AccuracyMetric: acc=0.74422
+ClassifyFPreRecMetric: f=0.742114, pre=0.733777, rec=0.757225
+
+[epoch:  18 step: 1690] train loss: 0.0193271 time: 0:06:22
+[epoch:  18 step: 1695] train loss: 0.0311045 time: 0:06:23
+[epoch:  18 step: 1700] train loss: 0.0103053 time: 0:06:24
+[epoch:  18 step: 1705] train loss: 0.0129784 time: 0:06:25
+[epoch:  18 step: 1710] train loss: 0.0107927 time: 0:06:26
+[epoch:  18 step: 1715] train loss: 0.0197757 time: 0:06:27
+[epoch:  18 step: 1720] train loss: 0.0104983 time: 0:06:28
+[epoch:  18 step: 1725] train loss: 0.0129515 time: 0:06:29
+[epoch:  18 step: 1730] train loss: 0.0155532 time: 0:06:30
+[epoch:  18 step: 1735] train loss: 0.0175185 time: 0:06:31
+[epoch:  18 step: 1740] train loss: 0.0192129 time: 0:06:32
+[epoch:  18 step: 1745] train loss: 0.0253432 time: 0:06:33
+[epoch:  18 step: 1750] train loss: 0.0160016 time: 0:06:34
+[epoch:  18 step: 1755] train loss: 0.0148367 time: 0:06:35
+[epoch:  18 step: 1760] train loss: 0.0191177 time: 0:06:37
+[epoch:  18 step: 1765] train loss: 0.00511046 time: 0:06:38
+[epoch:  18 step: 1770] train loss: 0.0161149 time: 0:06:39
+[epoch:  18 step: 1775] train loss: 0.018705 time: 0:06:40
+[epoch:  18 step: 1780] train loss: 0.0277077 time: 0:06:41
+[epoch:  18 step: 1785] train loss: 0.0129898 time: 0:06:42
+Evaluate data in 1.23 seconds!
+Evaluation on dev at Epoch 18/40. Step:1787/3920: 
+AccuracyMetric: acc=0.74711
+ClassifyFPreRecMetric: f=0.739504, pre=0.733852, rec=0.746628
+
+[epoch:  19 step: 1790] train loss: 0.0222533 time: 0:06:44
+[epoch:  19 step: 1795] train loss: 0.0110217 time: 0:06:45
+[epoch:  19 step: 1800] train loss: 0.0270419 time: 0:06:46
+[epoch:  19 step: 1805] train loss: 0.0184334 time: 0:06:47
+[epoch:  19 step: 1810] train loss: 0.0151851 time: 0:06:48
+[epoch:  19 step: 1815] train loss: 0.0202988 time: 0:06:50
+[epoch:  19 step: 1820] train loss: 0.010085 time: 0:06:51
+[epoch:  19 step: 1825] train loss: 0.00450382 time: 0:06:51
+[epoch:  19 step: 1830] train loss: 0.0151584 time: 0:06:53
+[epoch:  19 step: 1835] train loss: 0.00404933 time: 0:06:54
+[epoch:  19 step: 1840] train loss: 0.013896 time: 0:06:55
+[epoch:  19 step: 1845] train loss: 0.0217047 time: 0:06:56
+[epoch:  19 step: 1850] train loss: 0.0113827 time: 0:06:57
+[epoch:  19 step: 1855] train loss: 0.0107464 time: 0:06:58
+[epoch:  19 step: 1860] train loss: 0.0243975 time: 0:06:59
+[epoch:  19 step: 1865] train loss: 0.0204203 time: 0:07:00
+[epoch:  19 step: 1870] train loss: 0.0156934 time: 0:07:01
+[epoch:  19 step: 1875] train loss: 0.0233939 time: 0:07:02
+[epoch:  19 step: 1880] train loss: 0.0202133 time: 0:07:03
+[epoch:  19 step: 1885] train loss: 0.013328 time: 0:07:04
+Evaluate data in 1.34 seconds!
+Evaluation on dev at Epoch 19/40. Step:1887/3920: 
+AccuracyMetric: acc=0.75578
+ClassifyFPreRecMetric: f=0.752206, pre=0.746918, rec=0.761079
+
+[epoch:  20 step: 1890] train loss: 0.0249512 time: 0:07:07
+[epoch:  20 step: 1895] train loss: 0.0173833 time: 0:07:08
+[epoch:  20 step: 1900] train loss: 0.0131795 time: 0:07:09
+[epoch:  20 step: 1905] train loss: 0.037985 time: 0:07:10
+[epoch:  20 step: 1910] train loss: 0.0216 time: 0:07:11
+[epoch:  20 step: 1915] train loss: 0.0171451 time: 0:07:12
+[epoch:  20 step: 1920] train loss: 0.00992821 time: 0:07:13
+[epoch:  20 step: 1925] train loss: 0.0109487 time: 0:07:14
+[epoch:  20 step: 1930] train loss: 0.0327975 time: 0:07:15
+[epoch:  20 step: 1935] train loss: 0.017118 time: 0:07:17
+[epoch:  20 step: 1940] train loss: 0.00591004 time: 0:07:18
+[epoch:  20 step: 1945] train loss: 0.0217357 time: 0:07:19
+[epoch:  20 step: 1950] train loss: 0.0103336 time: 0:07:20
+[epoch:  20 step: 1955] train loss: 0.0181534 time: 0:07:21
+[epoch:  20 step: 1960] train loss: 0.0116166 time: 0:07:22
+[epoch:  20 step: 1965] train loss: 0.0307002 time: 0:07:23
+[epoch:  20 step: 1970] train loss: 0.0308191 time: 0:07:24
+[epoch:  20 step: 1975] train loss: 0.0341328 time: 0:07:25
+[epoch:  20 step: 1980] train loss: 0.0306184 time: 0:07:26
+[epoch:  20 step: 1985] train loss: 0.0142396 time: 0:07:27
+Evaluate data in 1.36 seconds!
+Evaluation on dev at Epoch 20/40. Step:1987/3920: 
+AccuracyMetric: acc=0.760116
+ClassifyFPreRecMetric: f=0.75287, pre=0.754612, rec=0.753372
+
+[epoch:  21 step: 1990] train loss: 0.0107697 time: 0:07:30
+[epoch:  21 step: 1995] train loss: 0.0122587 time: 0:07:31
+[epoch:  21 step: 2000] train loss: 0.022374 time: 0:07:32
+[epoch:  21 step: 2005] train loss: 0.0341161 time: 0:07:33
+[epoch:  21 step: 2010] train loss: 0.00744289 time: 0:07:34
+[epoch:  21 step: 2015] train loss: 0.00996728 time: 0:07:35
+[epoch:  21 step: 2020] train loss: 0.00866611 time: 0:07:37
+[epoch:  21 step: 2025] train loss: 0.0173164 time: 0:07:38
+[epoch:  21 step: 2030] train loss: 0.0277699 time: 0:07:39
+[epoch:  21 step: 2035] train loss: 0.0214447 time: 0:07:40
+[epoch:  21 step: 2040] train loss: 0.0127851 time: 0:07:41
+[epoch:  21 step: 2045] train loss: 0.0068396 time: 0:07:42
+[epoch:  21 step: 2050] train loss: 0.03048 time: 0:07:43
+[epoch:  21 step: 2055] train loss: 0.0118946 time: 0:07:44
+[epoch:  21 step: 2060] train loss: 0.0109878 time: 0:07:45
+[epoch:  21 step: 2065] train loss: 0.0171536 time: 0:07:46
+[epoch:  21 step: 2070] train loss: 0.0224257 time: 0:07:47
+[epoch:  21 step: 2075] train loss: 0.0100122 time: 0:07:48
+[epoch:  21 step: 2080] train loss: 0.021447 time: 0:07:49
+[epoch:  21 step: 2085] train loss: 0.0238381 time: 0:07:50
+Evaluate data in 1.16 seconds!
+Evaluation on dev at Epoch 21/40. Step:2086/3920: 
+AccuracyMetric: acc=0.74711
+ClassifyFPreRecMetric: f=0.742492, pre=0.736209, rec=0.751445
+
+[epoch:  22 step: 2090] train loss: 0.0203349 time: 0:07:53
+[epoch:  22 step: 2095] train loss: 0.00936912 time: 0:07:54
+[epoch:  22 step: 2100] train loss: 0.0253993 time: 0:07:55
+[epoch:  22 step: 2105] train loss: 0.012659 time: 0:07:56
+[epoch:  22 step: 2110] train loss: 0.0183646 time: 0:07:57
+[epoch:  22 step: 2115] train loss: 0.0101604 time: 0:07:58
+[epoch:  22 step: 2120] train loss: 0.0388049 time: 0:07:59
+[epoch:  22 step: 2125] train loss: 0.0179565 time: 0:08:00
+[epoch:  22 step: 2130] train loss: 0.00750035 time: 0:08:01
+[epoch:  22 step: 2135] train loss: 0.0134481 time: 0:08:02
+[epoch:  22 step: 2140] train loss: 0.0192179 time: 0:08:03
+[epoch:  22 step: 2145] train loss: 0.0195614 time: 0:08:04
+[epoch:  22 step: 2150] train loss: 0.0132603 time: 0:08:05
+[epoch:  22 step: 2155] train loss: 0.0141385 time: 0:08:06
+[epoch:  22 step: 2160] train loss: 0.0270616 time: 0:08:08
+[epoch:  22 step: 2165] train loss: 0.0121371 time: 0:08:09
+[epoch:  22 step: 2170] train loss: 0.0167691 time: 0:08:10
+[epoch:  22 step: 2175] train loss: 0.0214466 time: 0:08:11
+[epoch:  22 step: 2180] train loss: 0.0173545 time: 0:08:12
+[epoch:  22 step: 2185] train loss: 0.00522425 time: 0:08:13
+Evaluate data in 1.35 seconds!
+Evaluation on dev at Epoch 22/40. Step:2186/3920: 
+AccuracyMetric: acc=0.75578
+ClassifyFPreRecMetric: f=0.753455, pre=0.746324, rec=0.766859
+
+[epoch:  23 step: 2190] train loss: 0.0103654 time: 0:08:15
+[epoch:  23 step: 2195] train loss: 0.0119817 time: 0:08:16
+[epoch:  23 step: 2200] train loss: 0.0143934 time: 0:08:18
+[epoch:  23 step: 2205] train loss: 0.0109938 time: 0:08:19
+[epoch:  23 step: 2210] train loss: 0.0116381 time: 0:08:20
+[epoch:  23 step: 2215] train loss: 0.0229169 time: 0:08:21
+[epoch:  23 step: 2220] train loss: 0.00662159 time: 0:08:22
+[epoch:  23 step: 2225] train loss: 0.0142252 time: 0:08:23
+[epoch:  23 step: 2230] train loss: 0.0285299 time: 0:08:24
+[epoch:  23 step: 2235] train loss: 0.0145835 time: 0:08:25
+[epoch:  23 step: 2240] train loss: 0.0141169 time: 0:08:26
+[epoch:  23 step: 2245] train loss: 0.0177551 time: 0:08:27
+[epoch:  23 step: 2250] train loss: 0.0102159 time: 0:08:28
+[epoch:  23 step: 2255] train loss: 0.0163589 time: 0:08:29
+[epoch:  23 step: 2260] train loss: 0.010931 time: 0:08:30
+[epoch:  23 step: 2265] train loss: 0.0146412 time: 0:08:31
+[epoch:  23 step: 2270] train loss: 0.0322417 time: 0:08:32
+[epoch:  23 step: 2275] train loss: 0.00593758 time: 0:08:33
+[epoch:  23 step: 2280] train loss: 0.0308411 time: 0:08:35
+[epoch:  23 step: 2285] train loss: 0.0449329 time: 0:08:36
+Evaluate data in 1.44 seconds!
+Evaluation on dev at Epoch 23/40. Step:2285/3920: 
+AccuracyMetric: acc=0.742775
+ClassifyFPreRecMetric: f=0.736721, pre=0.730718, rec=0.746628
+
+[epoch:  24 step: 2290] train loss: 0.00800562 time: 0:08:38
+[epoch:  24 step: 2295] train loss: 0.0433908 time: 0:08:39
+[epoch:  24 step: 2300] train loss: 0.0326123 time: 0:08:41
+[epoch:  24 step: 2305] train loss: 0.0262485 time: 0:08:42
+[epoch:  24 step: 2310] train loss: 0.0131214 time: 0:08:43
+[epoch:  24 step: 2315] train loss: 0.0216168 time: 0:08:44
+[epoch:  24 step: 2320] train loss: 0.0415441 time: 0:08:45
+[epoch:  24 step: 2325] train loss: 0.00806243 time: 0:08:46
+[epoch:  24 step: 2330] train loss: 0.0122009 time: 0:08:47
+[epoch:  24 step: 2335] train loss: 0.0100919 time: 0:08:48
+[epoch:  24 step: 2340] train loss: 0.0128137 time: 0:08:49
+[epoch:  24 step: 2345] train loss: 0.018114 time: 0:08:50
+[epoch:  24 step: 2350] train loss: 0.0101111 time: 0:08:51
+[epoch:  24 step: 2355] train loss: 0.0170747 time: 0:08:52
+[epoch:  24 step: 2360] train loss: 0.026855 time: 0:08:53
+[epoch:  24 step: 2365] train loss: 0.014006 time: 0:08:54
+[epoch:  24 step: 2370] train loss: 0.0146333 time: 0:08:55
+[epoch:  24 step: 2375] train loss: 0.0157914 time: 0:08:56
+[epoch:  24 step: 2380] train loss: 0.0202039 time: 0:08:57
+Evaluate data in 1.42 seconds!
+Evaluation on dev at Epoch 24/40. Step:2384/3920: 
+AccuracyMetric: acc=0.765896
+ClassifyFPreRecMetric: f=0.759329, pre=0.760936, rec=0.758189
+
+[epoch:  25 step: 2385] train loss: 0.00806745 time: 0:09:01
+[epoch:  25 step: 2390] train loss: 0.00672039 time: 0:09:02
+[epoch:  25 step: 2395] train loss: 0.00690269 time: 0:09:03
+[epoch:  25 step: 2400] train loss: 0.00286078 time: 0:09:04
+[epoch:  25 step: 2405] train loss: 0.00561667 time: 0:09:05
+[epoch:  25 step: 2410] train loss: 0.0149014 time: 0:09:06
+[epoch:  25 step: 2415] train loss: 0.0106314 time: 0:09:07
+[epoch:  25 step: 2420] train loss: 0.00292476 time: 0:09:08
+[epoch:  25 step: 2425] train loss: 0.00421487 time: 0:09:09
+[epoch:  25 step: 2430] train loss: 0.00796349 time: 0:09:10
+[epoch:  25 step: 2435] train loss: 0.00925772 time: 0:09:11
+[epoch:  25 step: 2440] train loss: 0.00532404 time: 0:09:12
+[epoch:  25 step: 2445] train loss: 0.0118968 time: 0:09:13
+[epoch:  25 step: 2450] train loss: 0.0177305 time: 0:09:14
+[epoch:  25 step: 2455] train loss: 0.0165303 time: 0:09:15
+[epoch:  25 step: 2460] train loss: 0.0220463 time: 0:09:16
+[epoch:  25 step: 2465] train loss: 0.00510982 time: 0:09:17
+[epoch:  25 step: 2470] train loss: 0.0159774 time: 0:09:18
+[epoch:  25 step: 2475] train loss: 0.00769341 time: 0:09:19
+[epoch:  25 step: 2480] train loss: 0.0134612 time: 0:09:20
+Evaluate data in 1.36 seconds!
+Evaluation on dev at Epoch 25/40. Step:2483/3920: 
+AccuracyMetric: acc=0.75289
+ClassifyFPreRecMetric: f=0.750628, pre=0.741162, rec=0.765896
+
+[epoch:  26 step: 2485] train loss: 0.00648671 time: 0:09:23
+[epoch:  26 step: 2490] train loss: 0.0034788 time: 0:09:24
+[epoch:  26 step: 2495] train loss: 0.0232471 time: 0:09:25
+[epoch:  26 step: 2500] train loss: 0.00667003 time: 0:09:26
+[epoch:  26 step: 2505] train loss: 0.0137347 time: 0:09:27
+[epoch:  26 step: 2510] train loss: 0.0319855 time: 0:09:28
+[epoch:  26 step: 2515] train loss: 0.0114017 time: 0:09:29
+[epoch:  26 step: 2520] train loss: 0.00414536 time: 0:09:30
+[epoch:  26 step: 2525] train loss: 0.00307499 time: 0:09:32
+[epoch:  26 step: 2530] train loss: 0.00925045 time: 0:09:33
+[epoch:  26 step: 2535] train loss: 0.00607923 time: 0:09:34
+[epoch:  26 step: 2540] train loss: 0.0112398 time: 0:09:35
+[epoch:  26 step: 2545] train loss: 0.0177936 time: 0:09:36
+[epoch:  26 step: 2550] train loss: 0.00819785 time: 0:09:37
+[epoch:  26 step: 2555] train loss: 0.0181719 time: 0:09:38
+[epoch:  26 step: 2560] train loss: 0.00735486 time: 0:09:39
+[epoch:  26 step: 2565] train loss: 0.010368 time: 0:09:40
+[epoch:  26 step: 2570] train loss: 0.0151206 time: 0:09:41
+[epoch:  26 step: 2575] train loss: 0.0119797 time: 0:09:42
+[epoch:  26 step: 2580] train loss: 0.0200752 time: 0:09:43
+Evaluate data in 1.27 seconds!
+Evaluation on dev at Epoch 26/40. Step:2582/3920: 
+AccuracyMetric: acc=0.74422
+ClassifyFPreRecMetric: f=0.740059, pre=0.736229, rec=0.748555
+
+[epoch:  27 step: 2585] train loss: 0.0178551 time: 0:09:46
+[epoch:  27 step: 2590] train loss: 0.00684121 time: 0:09:47
+[epoch:  27 step: 2595] train loss: 0.00921848 time: 0:09:48
+[epoch:  27 step: 2600] train loss: 0.0348795 time: 0:09:49
+[epoch:  27 step: 2605] train loss: 0.00918725 time: 0:09:50
+[epoch:  27 step: 2610] train loss: 0.0168626 time: 0:09:51
+[epoch:  27 step: 2615] train loss: 0.013076 time: 0:09:52
+[epoch:  27 step: 2620] train loss: 0.0166672 time: 0:09:53
+[epoch:  27 step: 2625] train loss: 0.00893129 time: 0:09:54
+[epoch:  27 step: 2630] train loss: 0.0231106 time: 0:09:55
+[epoch:  27 step: 2635] train loss: 0.0137854 time: 0:09:56
+[epoch:  27 step: 2640] train loss: 0.0150583 time: 0:09:57
+[epoch:  27 step: 2645] train loss: 0.0223302 time: 0:09:58
+[epoch:  27 step: 2650] train loss: 0.00811808 time: 0:09:59
+[epoch:  27 step: 2655] train loss: 0.0201691 time: 0:10:00
+[epoch:  27 step: 2660] train loss: 0.0192944 time: 0:10:02
+[epoch:  27 step: 2665] train loss: 0.0155692 time: 0:10:03
+[epoch:  27 step: 2670] train loss: 0.0213662 time: 0:10:04
+[epoch:  27 step: 2675] train loss: 0.0148366 time: 0:10:05
+[epoch:  27 step: 2680] train loss: 0.0465842 time: 0:10:06
+Evaluate data in 1.34 seconds!
+Evaluation on dev at Epoch 27/40. Step:2682/3920: 
+AccuracyMetric: acc=0.75578
+ClassifyFPreRecMetric: f=0.749452, pre=0.747172, rec=0.752408
+
+[epoch:  28 step: 2685] train loss: 0.0122441 time: 0:10:08
+[epoch:  28 step: 2690] train loss: 0.0081418 time: 0:10:09
+[epoch:  28 step: 2695] train loss: 0.0202348 time: 0:10:11
+[epoch:  28 step: 2700] train loss: 0.0128184 time: 0:10:12
+[epoch:  28 step: 2705] train loss: 0.0174317 time: 0:10:13
+[epoch:  28 step: 2710] train loss: 0.00896421 time: 0:10:14
+[epoch:  28 step: 2715] train loss: 0.0338015 time: 0:10:15
+[epoch:  28 step: 2720] train loss: 0.00459772 time: 0:10:16
+[epoch:  28 step: 2725] train loss: 0.0116135 time: 0:10:17
+[epoch:  28 step: 2730] train loss: 0.0282961 time: 0:10:18
+[epoch:  28 step: 2735] train loss: 0.00818675 time: 0:10:19
+[epoch:  28 step: 2740] train loss: 0.0242653 time: 0:10:20
+[epoch:  28 step: 2745] train loss: 0.0120866 time: 0:10:21
+[epoch:  28 step: 2750] train loss: 0.0263105 time: 0:10:22
+[epoch:  28 step: 2755] train loss: 0.00516255 time: 0:10:23
+[epoch:  28 step: 2760] train loss: 0.00916054 time: 0:10:24
+[epoch:  28 step: 2765] train loss: 0.00911118 time: 0:10:25
+[epoch:  28 step: 2770] train loss: 0.0136069 time: 0:10:26
+[epoch:  28 step: 2775] train loss: 0.0147986 time: 0:10:27
+[epoch:  28 step: 2780] train loss: 0.0208643 time: 0:10:28
+Evaluate data in 1.36 seconds!
+Evaluation on dev at Epoch 28/40. Step:2782/3920: 
+AccuracyMetric: acc=0.771676
+ClassifyFPreRecMetric: f=0.764067, pre=0.766215, rec=0.762042
+
+[epoch:  29 step: 2785] train loss: 0.0169091 time: 0:10:32
+[epoch:  29 step: 2790] train loss: 0.00599428 time: 0:10:33
+[epoch:  29 step: 2795] train loss: 0.0202035 time: 0:10:34
+[epoch:  29 step: 2800] train loss: 0.0126931 time: 0:10:35
+[epoch:  29 step: 2805] train loss: 0.0067918 time: 0:10:36
+[epoch:  29 step: 2810] train loss: 0.0072536 time: 0:10:37
+[epoch:  29 step: 2815] train loss: 0.0217987 time: 0:10:38
+[epoch:  29 step: 2820] train loss: 0.00520466 time: 0:10:39
+[epoch:  29 step: 2825] train loss: 0.00675435 time: 0:10:40
+[epoch:  29 step: 2830] train loss: 0.00432532 time: 0:10:41
+[epoch:  29 step: 2835] train loss: 0.0132991 time: 0:10:42
+[epoch:  29 step: 2840] train loss: 0.0105047 time: 0:10:43
+[epoch:  29 step: 2845] train loss: 0.0128955 time: 0:10:44
+[epoch:  29 step: 2850] train loss: 0.00892216 time: 0:10:45
+[epoch:  29 step: 2855] train loss: 0.00708031 time: 0:10:46
+[epoch:  29 step: 2860] train loss: 0.0110337 time: 0:10:47
+[epoch:  29 step: 2865] train loss: 0.00176871 time: 0:10:49
+[epoch:  29 step: 2870] train loss: 0.00932157 time: 0:10:50
+[epoch:  29 step: 2875] train loss: 0.00746526 time: 0:10:51
+[epoch:  29 step: 2880] train loss: 0.00938191 time: 0:10:52
+Evaluate data in 1.32 seconds!
+Evaluation on dev at Epoch 29/40. Step:2881/3920: 
+AccuracyMetric: acc=0.75289
+ClassifyFPreRecMetric: f=0.744868, pre=0.748179, rec=0.748555
+
+[epoch:  30 step: 2885] train loss: 0.0167107 time: 0:10:54
+[epoch:  30 step: 2890] train loss: 0.0248307 time: 0:10:55
+[epoch:  30 step: 2895] train loss: 0.00540952 time: 0:10:56
+[epoch:  30 step: 2900] train loss: 0.00614646 time: 0:10:58
+[epoch:  30 step: 2905] train loss: 0.0140803 time: 0:10:59
+[epoch:  30 step: 2910] train loss: 0.0229381 time: 0:11:00
+[epoch:  30 step: 2915] train loss: 0.00485969 time: 0:11:01
+[epoch:  30 step: 2920] train loss: 0.0158325 time: 0:11:02
+[epoch:  30 step: 2925] train loss: 0.0165881 time: 0:11:03
+[epoch:  30 step: 2930] train loss: 0.0177545 time: 0:11:04
+[epoch:  30 step: 2935] train loss: 0.0391331 time: 0:11:05
+[epoch:  30 step: 2940] train loss: 0.0208895 time: 0:11:06
+[epoch:  30 step: 2945] train loss: 0.0285316 time: 0:11:07
+[epoch:  30 step: 2950] train loss: 0.0274131 time: 0:11:08
+[epoch:  30 step: 2955] train loss: 0.0187516 time: 0:11:09
+[epoch:  30 step: 2960] train loss: 0.0207836 time: 0:11:10
+[epoch:  30 step: 2965] train loss: 0.0132027 time: 0:11:11
+[epoch:  30 step: 2970] train loss: 0.0236056 time: 0:11:12
+[epoch:  30 step: 2975] train loss: 0.011877 time: 0:11:13
+[epoch:  30 step: 2980] train loss: 0.0225485 time: 0:11:14
+Evaluate data in 1.28 seconds!
+Evaluation on dev at Epoch 30/40. Step:2981/3920: 
+AccuracyMetric: acc=0.760116
+ClassifyFPreRecMetric: f=0.755701, pre=0.751102, rec=0.762042
+
+[epoch:  31 step: 2985] train loss: 0.0154296 time: 0:11:17
+[epoch:  31 step: 2990] train loss: 0.0130653 time: 0:11:18
+[epoch:  31 step: 2995] train loss: 0.00740991 time: 0:11:19
+[epoch:  31 step: 3000] train loss: 0.00644009 time: 0:11:20
+[epoch:  31 step: 3005] train loss: 0.00821938 time: 0:11:21
+[epoch:  31 step: 3010] train loss: 0.0322946 time: 0:11:22
+[epoch:  31 step: 3015] train loss: 0.0101344 time: 0:11:23
+[epoch:  31 step: 3020] train loss: 0.0279108 time: 0:11:24
+[epoch:  31 step: 3025] train loss: 0.0219367 time: 0:11:25
+[epoch:  31 step: 3030] train loss: 0.00133349 time: 0:11:26
+[epoch:  31 step: 3035] train loss: 0.0502843 time: 0:11:27
+[epoch:  31 step: 3040] train loss: 0.00537459 time: 0:11:28
+[epoch:  31 step: 3045] train loss: 0.0119811 time: 0:11:29
+[epoch:  31 step: 3050] train loss: 0.0217596 time: 0:11:30
+[epoch:  31 step: 3055] train loss: 0.00527943 time: 0:11:31
+[epoch:  31 step: 3060] train loss: 0.0190484 time: 0:11:32
+[epoch:  31 step: 3065] train loss: 0.0134524 time: 0:11:34
+[epoch:  31 step: 3070] train loss: 0.00209596 time: 0:11:35
+[epoch:  31 step: 3075] train loss: 0.0168028 time: 0:11:36
+[epoch:  31 step: 3080] train loss: 0.0209487 time: 0:11:37
+Evaluate data in 1.33 seconds!
+Evaluation on dev at Epoch 31/40. Step:3081/3920: 
+AccuracyMetric: acc=0.761561
+ClassifyFPreRecMetric: f=0.758461, pre=0.750036, rec=0.770713
+
+[epoch:  32 step: 3085] train loss: 0.00406037 time: 0:11:39
+[epoch:  32 step: 3090] train loss: 0.0039663 time: 0:11:40
+[epoch:  32 step: 3095] train loss: 0.00629452 time: 0:11:41
+[epoch:  32 step: 3100] train loss: 0.00652797 time: 0:11:43
+[epoch:  32 step: 3105] train loss: 0.0107781 time: 0:11:44
+[epoch:  32 step: 3110] train loss: 0.00388924 time: 0:11:45
+[epoch:  32 step: 3115] train loss: 0.0149945 time: 0:11:46
+[epoch:  32 step: 3120] train loss: 0.0103161 time: 0:11:47
+[epoch:  32 step: 3125] train loss: 0.0035876 time: 0:11:48
+[epoch:  32 step: 3130] train loss: 0.00575103 time: 0:11:49
+[epoch:  32 step: 3135] train loss: 0.0210421 time: 0:11:50
+[epoch:  32 step: 3140] train loss: 0.00140233 time: 0:11:51
+[epoch:  32 step: 3145] train loss: 0.0100782 time: 0:11:52
+[epoch:  32 step: 3150] train loss: 0.0164229 time: 0:11:53
+[epoch:  32 step: 3155] train loss: 0.00490341 time: 0:11:54
+[epoch:  32 step: 3160] train loss: 0.00813181 time: 0:11:55
+[epoch:  32 step: 3165] train loss: 0.00959472 time: 0:11:56
+[epoch:  32 step: 3170] train loss: 0.00747898 time: 0:11:57
+[epoch:  32 step: 3175] train loss: 0.0190438 time: 0:11:58
+Evaluate data in 1.34 seconds!
+Evaluation on dev at Epoch 32/40. Step:3179/3920: 
+AccuracyMetric: acc=0.763006
+ClassifyFPreRecMetric: f=0.750044, pre=0.771664, rec=0.736031
+
+[epoch:  33 step: 3180] train loss: 0.00325536 time: 0:12:01
+[epoch:  33 step: 3185] train loss: 0.0104414 time: 0:12:02
+[epoch:  33 step: 3190] train loss: 0.0103102 time: 0:12:03
+[epoch:  33 step: 3195] train loss: 0.00816492 time: 0:12:04
+[epoch:  33 step: 3200] train loss: 0.0123553 time: 0:12:05
+[epoch:  33 step: 3205] train loss: 0.0191162 time: 0:12:06
+[epoch:  33 step: 3210] train loss: 0.0147677 time: 0:12:07
+[epoch:  33 step: 3215] train loss: 0.0154649 time: 0:12:08
+[epoch:  33 step: 3220] train loss: 0.00767792 time: 0:12:09
+[epoch:  33 step: 3225] train loss: 0.0119431 time: 0:12:11
+[epoch:  33 step: 3230] train loss: 0.0109106 time: 0:12:12
+[epoch:  33 step: 3235] train loss: 0.0024237 time: 0:12:13
+[epoch:  33 step: 3240] train loss: 0.00217133 time: 0:12:14
+[epoch:  33 step: 3245] train loss: 0.00400335 time: 0:12:15
+[epoch:  33 step: 3250] train loss: 0.0160466 time: 0:12:16
+[epoch:  33 step: 3255] train loss: 0.0156504 time: 0:12:17
+[epoch:  33 step: 3260] train loss: 0.00687518 time: 0:12:18
+[epoch:  33 step: 3265] train loss: 0.0115425 time: 0:12:19
+[epoch:  33 step: 3270] train loss: 0.0133565 time: 0:12:20
+[epoch:  33 step: 3275] train loss: 0.0113133 time: 0:12:21
+Evaluate data in 1.2 seconds!
+Evaluation on dev at Epoch 33/40. Step:3279/3920: 
+AccuracyMetric: acc=0.75578
+ClassifyFPreRecMetric: f=0.749836, pre=0.746017, rec=0.754335
+
+[epoch:  34 step: 3280] train loss: 0.00315857 time: 0:12:23
+[epoch:  34 step: 3285] train loss: 0.0094332 time: 0:12:24
+[epoch:  34 step: 3290] train loss: 0.0203236 time: 0:12:25
+[epoch:  34 step: 3295] train loss: 0.00411484 time: 0:12:26
+[epoch:  34 step: 3300] train loss: 0.00838594 time: 0:12:27
+[epoch:  34 step: 3305] train loss: 0.00460114 time: 0:12:29
+[epoch:  34 step: 3310] train loss: 0.00516337 time: 0:12:30
+[epoch:  34 step: 3315] train loss: 0.00599029 time: 0:12:31
+[epoch:  34 step: 3320] train loss: 0.00256642 time: 0:12:32
+[epoch:  34 step: 3325] train loss: 0.00473406 time: 0:12:33
+[epoch:  34 step: 3330] train loss: 0.00289327 time: 0:12:34
+[epoch:  34 step: 3335] train loss: 0.00580096 time: 0:12:35
+[epoch:  34 step: 3340] train loss: 0.000916018 time: 0:12:36
+[epoch:  34 step: 3345] train loss: 0.00938691 time: 0:12:37
+[epoch:  34 step: 3350] train loss: 0.0145078 time: 0:12:38
+[epoch:  34 step: 3355] train loss: 0.00970035 time: 0:12:39
+[epoch:  34 step: 3360] train loss: 0.00110516 time: 0:12:40
+[epoch:  34 step: 3365] train loss: 0.00170691 time: 0:12:41
+[epoch:  34 step: 3370] train loss: 0.0189538 time: 0:12:42
+[epoch:  34 step: 3375] train loss: 0.0017007 time: 0:12:43
+Evaluate data in 1.23 seconds!
+Evaluation on dev at Epoch 34/40. Step:3379/3920: 
+AccuracyMetric: acc=0.758671
+ClassifyFPreRecMetric: f=0.749128, pre=0.757495, rec=0.747592
+
+[epoch:  35 step: 3380] train loss: 0.0219193 time: 0:12:46
+[epoch:  35 step: 3385] train loss: 0.00529386 time: 0:12:47
+[epoch:  35 step: 3390] train loss: 0.00263379 time: 0:12:48
+[epoch:  35 step: 3395] train loss: 0.00321676 time: 0:12:49
+[epoch:  35 step: 3400] train loss: 0.00942891 time: 0:12:50
+[epoch:  35 step: 3405] train loss: 0.0120457 time: 0:12:51
+[epoch:  35 step: 3410] train loss: 0.00371272 time: 0:12:52
+[epoch:  35 step: 3415] train loss: 0.0130981 time: 0:12:53
+[epoch:  35 step: 3420] train loss: 0.00299886 time: 0:12:54
+[epoch:  35 step: 3425] train loss: 0.00871898 time: 0:12:55
+[epoch:  35 step: 3430] train loss: 0.0121048 time: 0:12:56
+[epoch:  35 step: 3435] train loss: 0.00694266 time: 0:12:57
+[epoch:  35 step: 3440] train loss: 0.0227358 time: 0:12:58
+[epoch:  35 step: 3445] train loss: 0.00746557 time: 0:12:59
+[epoch:  35 step: 3450] train loss: 0.00854178 time: 0:13:00
+[epoch:  35 step: 3455] train loss: 0.00139533 time: 0:13:01
+[epoch:  35 step: 3460] train loss: 0.00208824 time: 0:13:02
+[epoch:  35 step: 3465] train loss: 0.0095935 time: 0:13:03
+[epoch:  35 step: 3470] train loss: 0.0144411 time: 0:13:05
+[epoch:  35 step: 3475] train loss: 0.0128637 time: 0:13:06
+Evaluate data in 1.32 seconds!
+Evaluation on dev at Epoch 35/40. Step:3478/3920: 
+AccuracyMetric: acc=0.748555
+ClassifyFPreRecMetric: f=0.747287, pre=0.738792, rec=0.761079
+
+[epoch:  36 step: 3480] train loss: 0.00172203 time: 0:13:08
+[epoch:  36 step: 3485] train loss: 0.00475716 time: 0:13:09
+[epoch:  36 step: 3490] train loss: 0.00776552 time: 0:13:10
+[epoch:  36 step: 3495] train loss: 0.0111018 time: 0:13:11
+[epoch:  36 step: 3500] train loss: 0.0102216 time: 0:13:12
+[epoch:  36 step: 3505] train loss: 0.0106422 time: 0:13:13
+[epoch:  36 step: 3510] train loss: 0.00306138 time: 0:13:15
+[epoch:  36 step: 3515] train loss: 0.00837679 time: 0:13:16
+[epoch:  36 step: 3520] train loss: 0.0101449 time: 0:13:17
+[epoch:  36 step: 3525] train loss: 0.00466579 time: 0:13:18
+[epoch:  36 step: 3530] train loss: 0.0066691 time: 0:13:19
+[epoch:  36 step: 3535] train loss: 0.00761439 time: 0:13:20
+[epoch:  36 step: 3540] train loss: 0.0050351 time: 0:13:21
+[epoch:  36 step: 3545] train loss: 0.00798304 time: 0:13:22
+[epoch:  36 step: 3550] train loss: 0.00297592 time: 0:13:23
+[epoch:  36 step: 3555] train loss: 0.00454602 time: 0:13:24
+[epoch:  36 step: 3560] train loss: 0.00140105 time: 0:13:25
+[epoch:  36 step: 3565] train loss: 0.0130915 time: 0:13:26
+[epoch:  36 step: 3570] train loss: 0.000726449 time: 0:13:27
+[epoch:  36 step: 3575] train loss: 0.00212687 time: 0:13:28
+Evaluate data in 1.25 seconds!
+Evaluation on dev at Epoch 36/40. Step:3577/3920: 
+AccuracyMetric: acc=0.75289
+ClassifyFPreRecMetric: f=0.747189, pre=0.744955, rec=0.750482
+
+[epoch:  37 step: 3580] train loss: 0.00778852 time: 0:13:31
+[epoch:  37 step: 3585] train loss: 0.00580247 time: 0:13:32
+[epoch:  37 step: 3590] train loss: 0.00627317 time: 0:13:33
+[epoch:  37 step: 3595] train loss: 0.00708864 time: 0:13:34
+[epoch:  37 step: 3600] train loss: 0.000675323 time: 0:13:35
+[epoch:  37 step: 3605] train loss: 0.00394172 time: 0:13:36
+[epoch:  37 step: 3610] train loss: 0.0141974 time: 0:13:37
+[epoch:  37 step: 3615] train loss: 0.00658258 time: 0:13:38
+[epoch:  37 step: 3620] train loss: 0.00773496 time: 0:13:39
+[epoch:  37 step: 3625] train loss: 0.0109529 time: 0:13:40
+[epoch:  37 step: 3630] train loss: 0.000727799 time: 0:13:41
+[epoch:  37 step: 3635] train loss: 0.00979964 time: 0:13:42
+[epoch:  37 step: 3640] train loss: 0.0131073 time: 0:13:43
+[epoch:  37 step: 3645] train loss: 0.00219152 time: 0:13:44
+[epoch:  37 step: 3650] train loss: 0.00690221 time: 0:13:45
+[epoch:  37 step: 3655] train loss: 0.0113952 time: 0:13:47
+[epoch:  37 step: 3660] train loss: 0.00426709 time: 0:13:48
+[epoch:  37 step: 3665] train loss: 0.0033455 time: 0:13:49
+[epoch:  37 step: 3670] train loss: 0.00699218 time: 0:13:50
+[epoch:  37 step: 3675] train loss: 0.00996089 time: 0:13:51
+Evaluate data in 1.3 seconds!
+Evaluation on dev at Epoch 37/40. Step:3677/3920: 
+AccuracyMetric: acc=0.754335
+ClassifyFPreRecMetric: f=0.7484, pre=0.746771, rec=0.754335
+
+[epoch:  38 step: 3680] train loss: 0.00112326 time: 0:13:53
+[epoch:  38 step: 3685] train loss: 0.00848315 time: 0:13:54
+[epoch:  38 step: 3690] train loss: 0.00624652 time: 0:13:55
+[epoch:  38 step: 3695] train loss: 0.00569015 time: 0:13:56
+[epoch:  38 step: 3700] train loss: 0.00354877 time: 0:13:58
+[epoch:  38 step: 3705] train loss: 0.00247661 time: 0:13:59
+[epoch:  38 step: 3710] train loss: 0.00257432 time: 0:14:00
+[epoch:  38 step: 3715] train loss: 0.00240566 time: 0:14:01
+[epoch:  38 step: 3720] train loss: 0.00270399 time: 0:14:02
+[epoch:  38 step: 3725] train loss: 0.00469037 time: 0:14:03
+[epoch:  38 step: 3730] train loss: 0.00450454 time: 0:14:04
+[epoch:  38 step: 3735] train loss: 0.00741186 time: 0:14:05
+[epoch:  38 step: 3740] train loss: 0.00373721 time: 0:14:06
+[epoch:  38 step: 3745] train loss: 0.00164072 time: 0:14:07
+[epoch:  38 step: 3750] train loss: 0.0196039 time: 0:14:08
+[epoch:  38 step: 3755] train loss: 0.00411242 time: 0:14:09
+[epoch:  38 step: 3760] train loss: 0.00584015 time: 0:14:10
+[epoch:  38 step: 3765] train loss: 0.00908447 time: 0:14:11
+[epoch:  38 step: 3770] train loss: 0.007464 time: 0:14:12
+[epoch:  38 step: 3775] train loss: 0.00779181 time: 0:14:13
+Evaluate data in 1.16 seconds!
+Evaluation on dev at Epoch 38/40. Step:3776/3920: 
+AccuracyMetric: acc=0.745665
+ClassifyFPreRecMetric: f=0.736864, pre=0.740828, rec=0.734104
+
+[epoch:  39 step: 3780] train loss: 0.00426177 time: 0:14:16
+[epoch:  39 step: 3785] train loss: 0.00246801 time: 0:14:17
+[epoch:  39 step: 3790] train loss: 0.00256564 time: 0:14:18
+[epoch:  39 step: 3795] train loss: 0.00472354 time: 0:14:19
+[epoch:  39 step: 3800] train loss: 0.00498616 time: 0:14:20
+[epoch:  39 step: 3805] train loss: 0.00717853 time: 0:14:21
+[epoch:  39 step: 3810] train loss: 0.00297167 time: 0:14:22
+[epoch:  39 step: 3815] train loss: 0.00141708 time: 0:14:23
+[epoch:  39 step: 3820] train loss: 0.00334993 time: 0:14:24
+[epoch:  39 step: 3825] train loss: 0.00181629 time: 0:14:25
+[epoch:  39 step: 3830] train loss: 0.000785748 time: 0:14:26
+[epoch:  39 step: 3835] train loss: 0.00270693 time: 0:14:27
+[epoch:  39 step: 3840] train loss: 0.00416721 time: 0:14:28
+[epoch:  39 step: 3845] train loss: 0.0138622 time: 0:14:29
+[epoch:  39 step: 3850] train loss: 0.0101238 time: 0:14:30
+[epoch:  39 step: 3855] train loss: 0.0197547 time: 0:14:31
+[epoch:  39 step: 3860] train loss: 0.00304179 time: 0:14:33
+[epoch:  39 step: 3865] train loss: 0.00101039 time: 0:14:34
+[epoch:  39 step: 3870] train loss: 0.0011794 time: 0:14:35
+[epoch:  39 step: 3875] train loss: 0.0114603 time: 0:14:36
+Evaluate data in 1.24 seconds!
+Evaluation on dev at Epoch 39/40. Step:3875/3920: 
+AccuracyMetric: acc=0.754335
+ClassifyFPreRecMetric: f=0.744764, pre=0.754406, rec=0.736994
+
+[epoch:  40 step: 3880] train loss: 0.00465819 time: 0:14:38
+[epoch:  40 step: 3885] train loss: 0.00417702 time: 0:14:39
+[epoch:  40 step: 3890] train loss: 0.00044513 time: 0:14:41
+[epoch:  40 step: 3895] train loss: 0.00975934 time: 0:14:42
+[epoch:  40 step: 3900] train loss: 0.00979053 time: 0:14:43
+[epoch:  40 step: 3905] train loss: 0.00172727 time: 0:14:44
+[epoch:  40 step: 3910] train loss: 0.0140452 time: 0:14:45
+[epoch:  40 step: 3915] train loss: 0.0025743 time: 0:14:46
+[epoch:  40 step: 3920] train loss: 0.000852109 time: 0:14:47
+[epoch:  40 step: 3925] train loss: 0.0051069 time: 0:14:48
+[epoch:  40 step: 3930] train loss: 0.00110343 time: 0:14:49
+[epoch:  40 step: 3935] train loss: 0.00555045 time: 0:14:50
+[epoch:  40 step: 3940] train loss: 0.00678095 time: 0:14:51
+[epoch:  40 step: 3945] train loss: 0.00161015 time: 0:14:52
+[epoch:  40 step: 3950] train loss: 0.00127236 time: 0:14:53
+[epoch:  40 step: 3955] train loss: 0.00204947 time: 0:14:54
+[epoch:  40 step: 3960] train loss: 0.000741036 time: 0:14:55
+[epoch:  40 step: 3965] train loss: 0.00839266 time: 0:14:56
+[epoch:  40 step: 3970] train loss: 0.00435781 time: 0:14:57
+Evaluate data in 1.23 seconds!
+Evaluation on dev at Epoch 40/40. Step:3974/3920: 
+AccuracyMetric: acc=0.74422
+ClassifyFPreRecMetric: f=0.741219, pre=0.732869, rec=0.753372
+
+Reloaded the best model.
+
+In Epoch:28/Step:2782, got best dev performance:
+AccuracyMetric: acc=0.771676
+ClassifyFPreRecMetric: f=0.764067, pre=0.766215, rec=0.762042
