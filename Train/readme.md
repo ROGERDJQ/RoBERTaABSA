@@ -11,9 +11,7 @@ This folder  mainly contains codes for fine-tuning  models on ABSA datasets.
 2. Run the codes with command:
 
 ```bash
-  python finetune.py 
-  --data_dir {/your/dataset_filepath/} 
-  --dataset {dataset_name}
+  python finetune.py   --data_dir {/your/dataset_filepath/}   --dataset {dataset_name}
 ```
 
 
