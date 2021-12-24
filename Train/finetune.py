@@ -273,13 +273,8 @@ trainer.train(load_best_model=True)
 if args.save_embed:
     fitlog.add_other(trainer.start_time, name="start_time")
     os.makedirs(f"{root_fp}/save_models", exist_ok=True)
-    folder = f"{root_fp}/save_models/{model_type}-{args.dataset}-FT"
-    count = 0
-    for fn in os.listdir(f"{root_fp}/save_models"):
-        if fn.startswith(folder.split("/")[-1]):
-            count += 1
-    folder = folder + str(count)
-    fitlog.add_other(count, name="count")
+    folder = f"{root_fp}/save_models/{model_type}-{args.dataset}-FT-{trainer.start_time[:19]}"
+
     if not os.path.exists(folder):
         os.makedirs(folder, exist_ok=True)
         if model_type  in ('bert', 'roberta'):
