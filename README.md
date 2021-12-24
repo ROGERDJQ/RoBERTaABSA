@@ -32,7 +32,7 @@ packages:
 - fitlog
    - pip install git+https://github.com/fastnlp/fitlog
 
-All code runs on linux only. For details about `ASGCN`, `PWCN`, `RGAT`, please refer to their original repos.
+All code runs on linux only. 
 
 
 
