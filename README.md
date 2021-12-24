@@ -50,9 +50,9 @@ We also provide  detailed arguments and training/evaluation logs here:
 
 | datasets     | Acc   | F1    | args | logs |
 | ------------ | ----- | ----- | ---- | ---- |
-| Restaurant14 | 88.84 | 83.09 |      |      |
-| Laptop14     | 85.1  | 82.08 |      |      |
-| Twitter      | 77.17 | 76.41 |      |      |
+| Restaurant14 | 88.84 | 83.09 |  [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_args)    |  [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_logs)    |
+| Laptop14     | 85.1  | 82.08 |   [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_args)   | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_logs)     |
+| Twitter      | 77.17 | 76.41 |  [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)    |   [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)   |
 
 It is worth noting that the above results are only from one experiment each rather than averaged runs in our paper.
 
