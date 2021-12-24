@@ -9,7 +9,7 @@ You can find more details here:
 - [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)
 - [`Explainaboard`](http://explainaboard.nlpedia.ai/leaderboard/task-absa/)
 
-For any questions about code or paper, feel free to create issues or email me via jqdai19@fudan.edu.cn.
+For any questions about codes or paper, feel free to create issues or email me via jqdai19@fudan.edu.cn.
 
 For research on the whole ABSA task, please have a look at our ACL 2021 paper [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
 
@@ -32,7 +32,7 @@ packages:
 - fitlog
   - pip install git+https://github.com/fastnlp/fitlog
 
-All code runs on linux only.
+All codes are tested on linux only.
 
 ## Data
 
@@ -42,7 +42,7 @@ English Datasets are released in `Dataset` folder for reproduction. If you want 
 
 **To get ALSC result:**
 
-To get ALSC result (see [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder. Before the code running, make sure that `--data_dir` and `--dataset` are filled with correct dataset filepath and name.
+To get ALSC result (see [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder. Before the code running, make sure that `--data_dir` and `--dataset` are filled with correct dataset filepath and dataset name.
 
 We also provide detailed arguments and training logs here:
 
@@ -50,27 +50,25 @@ We also provide detailed arguments and training logs here:
 | ------------ | ----- | ----- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
 | Restaurant14 | 88.84 | 83.09 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_args) | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_logs) |
 | Laptop14     | 85.1  | 82.08 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_logs)  |
-| Twitter      | 77.17 | 76.41 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)  |
+| Twitter      | 77.46 | 76.87 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)  |
 
-It is worth noting that the above results are only from one experiment each rather than averaged runs in our paper.
+It is worth noting that the above results are only from one experiment each rather than averaged runs reported in the paper. 
 
 **To reproduce all experiments in paper:**
 
 It includes four steps to reproduce all experiments in our paper:
 
-1. Fine-tuning the model on ABSA datasets using the code from the `Train` folder, which will save the fine-tuned models.
+1. Fine-tuning  models on ABSA datasets using codes from  `Train` folder, which will save the fine-tuned models after fine-tuning.
 
-
-    ```bash
-    python finetune.py --data_dir /user/project/dataset/ --dataset Restaurant
-    ```
+   ```bash
+   python finetune.py --data_dir {/your/dataset_filepath/} --dataset {dataset_name}
+   ```
 
 2. Generate the induced trees using the code from the `Perturbed-Masking` folder, which will output the input datasets for different models.
 
-
-    ```bash
-    python generate_matrix.py --model_path bert --data_dir /user/project/dataset/ --dataset Restaurant
-    ```
+   ```bash
+   python generate_matrix.py --model_path bert --data_dir /user/project/dataset/ --dataset Restaurant
+   ```
 
 - `model_path` can be either `bert/roberta/xlmroberta/xlmbert`, or the model path where the fine-tuned model is put.
 
