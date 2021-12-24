@@ -2,6 +2,10 @@
 *.vscode
 *.history
 *.txt
+FT_logs
+search/
+save_models
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

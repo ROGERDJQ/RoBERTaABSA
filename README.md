@@ -1,10 +1,10 @@
 # RoBERTaABSA
 
-Implementation  for  paper  [`Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa`](https://arxiv.org/abs/2104.04986) [`NAACL 2021`]. Our work focuses on  Aspect-level Sentiment Classification (ALSC) specifically.
+Implementation  for  paper  **Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa **[`NAACL 2021`], a work focusing on  Aspect-level Sentiment Classification (ALSC). It conducts a detailed study on the performance gain of dependency tree in ALSC, and provides a strong baseline using RoBERTa.
 
 
 
-You can find more  information  here:
+You can find more  details  here:
 - [`Arxiv`](https://arxiv.org/abs/2104.04986)
 - [`Github`](https://github.com/ROGERDJQ/RoBERTaABSA)
 - [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)
@@ -12,7 +12,8 @@ You can find more  information  here:
 
 For any questions about code or paper, feel free to create  issues or email me via jqdai19@fudan.edu.cn.
 
-For  research  on  whole ABSA task, please have a look at our  ACL 2021 paper [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
+For  research on the whole ABSA task, please have a look at our  ACL 2021 paper  [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
+ [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
 
 
 ## Dependencies
@@ -36,18 +37,30 @@ All code runs on linux only. For details about `ASGCN`, `PWCN`, `RGAT`, please r
 
 
 ## Data
-English Datasets are released in  `Dataset` folder for reproduction. If you want to process with your own data, please refer to the python script in `Dataset` folder.
-
-
+English Datasets are released in  `Dataset` folder for reproduction. If you want to process with your own data, please refer to  python scripts in `Dataset` folder.
 
 
 
 ## Usage
-### To get ALSC result:
-- To get  ALSC result (see [Paperwithcode](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder.  Before the code running, make sure the `--data_dir` and `--dataset` arguments are filled with correct dataset filepath and name.
-### To reproduce all experiments in paper:
-- It includes four steps to reproduce all experiments in our paper:
+**To get  ALSC result:**
+
+ To get  ALSC result (see [Paperwithcode](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder.  Before the code running, make sure that `--data_dir` and `--dataset`  are filled with correct dataset filepath and name.
+
+We also provide  detailed arguments and training/evaluation logs here:
+
+| datasets     | Acc   | F1    | args | logs |
+| ------------ | ----- | ----- | ---- | ---- |
+| Restaurant14 | 88.84 | 83.09 |      |      |
+| Laptop14     | 85.1  | 82.08 |      |      |
+| Twitter      | 77.17 | 76.41 |      |      |
+
+It is worth noting that the above results are only from one experiment each rather than averaged runs in our paper.
+
+**To reproduce all experiments in paper:** 
+
+It includes four steps to reproduce all experiments in our paper:
   1. Fine-tuning the model on ABSA datasets using the code from the `Train` folder, which will save the fine-tuned models.
+
     ```bash
     python finetune.py --data_dir /user/project/dataset/ --dataset Restaurant
     ```
