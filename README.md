@@ -1,6 +1,6 @@
 # RoBERTaABSA
 
-Implementation for paper **Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa** [`NAACL 2021`], a work focusing on Aspect-level Sentiment Classification (ALSC). It conducts a detailed study on the performance gain of dependency tree in ALSC, and provides a strong baseline using RoBERTa.
+Implementation for paper **Does syntax matter? A strong baseline for Aspect-based Sentiment Analysis with RoBERTa** [NAACL 2021], a work focusing on Aspect-level Sentiment Classification (ALSC). It conducts a detailed study on the performance gain of dependency tree in ALSC, and provides a strong baseline using RoBERTa.
 
 You can find more details here:
 
@@ -12,7 +12,6 @@ You can find more details here:
 For any questions about code or paper, feel free to create issues or email me via jqdai19@fudan.edu.cn.
 
 For research on the whole ABSA task, please have a look at our ACL 2021 paper [A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
-[A Unified Generative Framework for Aspect-Based Sentiment Analysis](https://arxiv.org/abs/2106.04300).
 
 ## Dependencies
 
@@ -45,7 +44,7 @@ English Datasets are released in `Dataset` folder for reproduction. If you want 
 
 To get ALSC result (see [`Paperwithcode`](https://www.paperswithcode.com/paper/does-syntax-matter-a-strong-baseline-for)), simply run the `finetune.py` in `Train` folder. Before the code running, make sure that `--data_dir` and `--dataset` are filled with correct dataset filepath and name.
 
-We also provide detailed arguments and training/evaluation logs here:
+We also provide detailed arguments and training logs here:
 
 | datasets     | Acc   | F1    | args                                                                           | logs                                                                           |
 | ------------ | ----- | ----- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
