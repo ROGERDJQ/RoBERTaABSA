@@ -51,7 +51,7 @@ We also provide detailed arguments and logs here:
 | Laptop14     | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_logs)  |
 | Twitter      | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)  |
 
-It is worth noting that above results are only tested by one run rather than averaged runs reported in the paper. 
+It is worth noting that above results are only tested by one run rather than averaged runs reported in the paper. Also remember to check  `Notes` below.
 
 **To reproduce the whole experiment in paper:**
 
