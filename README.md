@@ -45,11 +45,11 @@ To get ALSC results (see [`Paperwithcode`](https://www.paperswithcode.com/paper/
 
 We also provide detailed arguments and logs here:
 
-| datasets     | Acc   | F1    | args                                                                           | logs                                                                           |
-| ------------ | ----- | ----- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
-| Restaurant14 | 88.84 | 83.09 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_args) | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_logs) |
-| Laptop14     | 85.1  | 82.08 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_logs)  |
-| Twitter      | 77.46 | 76.87 | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)  |
+| datasets     | args                                                                           | logs                                                                           |
+| ------------  | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| Restaurant14  | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_args) | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/rest_logs) |
+| Laptop14     | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/lap_logs)  |
+| Twitter      | [args](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_args)  | [logs](https://github.com/ROGERDJQ/RoBERTaABSA/blob/main/Train/exps/twi_logs)  |
 
 It is worth noting that above results are only tested by one run rather than averaged runs reported in the paper. 
 
